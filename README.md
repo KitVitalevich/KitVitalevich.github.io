@@ -14,3 +14,5 @@
 [Урок 10](https://kitvitalevich.github.io/lesson_10/) - знакомство с less
 
 [Урок 11](https://kitvitalevich.github.io/lesson_11/) - сниппеты
+
+[Урок 12](https://kitvitalevich.github.io/lesson_12/) - GitHub репозиторий
