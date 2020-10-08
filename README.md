@@ -5,4 +5,4 @@
 
 [Урок 6.1](https://kitvitalevich.github.io/lesson_6/frame/) и [Урок 6.2](https://kitvitalevich.github.io/lesson_5/header/) - позиционирование
 
-[Урок 7]((https://kitvitalevich.github.io/lesson_7/) - первый сайт на html и css
+[Урок 7](https://kitvitalevich.github.io/lesson_7/) - первый сайт на html и css
