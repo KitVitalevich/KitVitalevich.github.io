@@ -1,0 +1,37 @@
+.box {
+	background-color: #000;
+	width: 100%;
+ position: fixed;
+ left: 0%;
+ top: 0px;
+ height: 50px;
+}
+
+.mini-box {
+	text-align: right;
+	position: relative;
+	top: 15px;
+	right: 15px;
+	word-spacing: 5px;
+}
+
+.text {
+	position: relative;
+	padding: 30px 10px;
+}
+
+.reference1 {
+	text-decoration: none;
+}
+.reference2 {
+	text-decoration: none;
+}
+.reference3 {
+	text-decoration: none;
+}
+.reference4 {
+	text-decoration: none;
+}
+.reference5 {
+	text-decoration: none;
+}
