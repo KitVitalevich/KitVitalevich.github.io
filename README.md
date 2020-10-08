@@ -5,7 +5,7 @@
 
 [Урок 6.1](https://KitVitalevich.github.io/lesson_6/frame/) и [Урок 6.2](https://kitvitalevich.github.io/lesson_5/header/) - позиционирование
 
-[Урок 7](https://KitVitalevich.github.io/lesson_7/) - первый сайт на html и css
+[Урок 7](https://username.github.io/lesson_7/) - первый сайт на html и css
 
 [Урок 8](https://KitVitalevich.github.io/lesson_8/) - адаптив при помощи Bootstrap
 
