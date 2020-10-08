@@ -11,4 +11,6 @@
 
 [Урок 9](https://kitvitalevich.github.io/lesson_9/) - вёрстка сайта из 7 урока при помощи Bootstrap
 
-[Урок 10](https://kitvitalevich.github.io/lesson_5/) - знакомство с less
+[Урок 10](https://kitvitalevich.github.io/lesson_10/) - знакомство с less
+
+[Урок 11](https://kitvitalevich.github.io/lesson_11/) - сниппеты
