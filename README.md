@@ -7,4 +7,6 @@
 
 [Урок 7](https://kitvitalevich.github.io/lesson_7/) - первый сайт на html и css
 
-[Урок 8](https://kitvitalevich.github.io/lesson_5/) - адаптив при помощи Bootstrap
+[Урок 8](https://kitvitalevich.github.io/lesson_8/) - адаптив при помощи Bootstrap
+
+[Урок 9](https://kitvitalevich.github.io/lesson_9/) - вёрстка сайта из 7 урока при помощи Bootstrap
