@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Bebas Neue Cyrillic';
+    src: url('../fonts/Bebas/BebasNeueCyrillic.eot');
+    src: url('../fonts/Bebas/BebasNeueCyrillic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Bebas/BebasNeueCyrillic.woff2') format('woff2'),
+        url('../fonts/Bebas/BebasNeueCyrillic.woff') format('woff'),
+        url('../fonts/Bebas/BebasNeueCyrillic.ttf') format('truetype'),
+        url('../fonts/Bebas/BebasNeueCyrillic.svg#BebasNeueCyrillic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato/Lato-Regular.eot');
+    src: url('../fonts/Lato/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato/Lato-Regular.woff2') format('woff2'),
+        url('../fonts/Lato/Lato-Regular.woff') format('woff'),
+        url('../fonts/Lato/Lato-Regular.ttf') format('truetype'),
+        url('../fonts/Lato/Lato-Regular.svg#Lato-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+.lobster {
+	font-family: 'Lobster';
+}
+.lato {
+	font-family: 'Lato', sans-serif;
+}
+.bebas {
+	font-family: 'Bebas Neue Cyrillic', sans-serif;
+}
+.open-sans {
+	font-family: 'Open Sans', sans-serif;
+}
+.text-box{
+	padding-top: 2rem;
+}
+.result {
+	margin-bottom: 0;
+	margin-top: 3rem;
+}
+.fonts {
+	font-size: 2rem;
+	text-align: center;
+	padding: 2rem;
+}
+small {
+	font-size: 1.3rem;
+}
