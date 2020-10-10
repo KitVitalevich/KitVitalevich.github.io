@@ -20,3 +20,5 @@
 [Урок 13](https://kitvitalevich.github.io/lesson_13/src/index.html) - верстка perfect pixel
 
 [Урок 14](https://kitvitalevich.github.io/lesson_14/BigSite/src/index.html) - сверстана шапка профиля
+
+[Урок 15](https://kitvitalevich.github.io/lesson_15/src/index.html) - подключение шрифтов
