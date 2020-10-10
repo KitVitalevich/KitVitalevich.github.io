@@ -19,4 +19,4 @@
 
 [Урок 13](https://KitVitalevich.github.io/lesson_13/) - верстка perfect pixel
 
-[Урок 14](https://KitVitalevich.github.io/lesson_14/) - сверстана шапка профиля
+[Урок 14](KitVitalevich.github.io/lesson_14/BigSite/src/index.html) - сверстана шапка профиля
