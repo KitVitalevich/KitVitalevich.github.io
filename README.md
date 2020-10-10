@@ -16,3 +16,5 @@
 [Урок 11](https://KitVitalevich.github.io/lesson_11/) - сниппеты
 
 [Урок 12](https://KitVitalevich.github.io/lesson_12/) - GitHub репозиторий
+
+[Урок 13](https://KitVitalevich.github.io/lesson_13/) - верстка perfect pixel
