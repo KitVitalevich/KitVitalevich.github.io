@@ -22,3 +22,5 @@
 [Урок 14](https://kitvitalevich.github.io/lesson_14/BigSite/src/index.html) - сверстана шапка профиля
 
 [Урок 15](https://kitvitalevich.github.io/lesson_15/src/index.html) - подключение шрифтов
+
+[Практика](https://kitvitalevich.github.io/practice/src/index.html) - урок 2. подключены шрифты, свёрстан главный экран
