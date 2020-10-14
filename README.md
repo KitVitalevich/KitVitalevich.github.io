@@ -19,8 +19,10 @@
 
 [Урок 13](https://kitvitalevich.github.io/lesson_13/src/index.html) - верстка perfect pixel
 
-[Урок 14](https://kitvitalevich.github.io/lesson_14/BigSite/src/index.html) - сверстана шапка профиля
+[Практика](https://kitvitalevich.github.io/lesson_14/BigSite/src/index.html) - урок 1. сверстана шапка профиля
 
-[Урок 15](https://kitvitalevich.github.io/lesson_15/src/index.html) - подключение шрифтов
+[Урок 14](https://kitvitalevich.github.io/lesson_15/src/index.html) - подключение шрифтов
 
 [Практика](https://kitvitalevich.github.io/practice/src/index.html) - урок 2. подключены шрифты, свёрстан главный экран
+
+[Урок 15](https://kitvitalevich.github.io/lesson_15/hover_effect/index.html) - псевдоклассы и псевдоэлементы 
