@@ -27,4 +27,4 @@
 
 [Урок 15](https://kitvitalevich.github.io/lesson_15/hover_effect/index.html) - псевдоклассы и псевдоэлементы 
 
-[Практика](KitVitalevich.github.io/practice/src/index.html) - урок 3. сделан адаптив и эффекты при наведении 
+[Практика](https://kitvitalevich.github.io/practice/src/index.html) - урок 3. сделан адаптив и эффекты при наведении 
