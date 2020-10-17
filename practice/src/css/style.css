@@ -16,12 +16,22 @@
   font-display: swap;
 }
 /* Colors (цвета) */
+/* Медиа запросы */
 /* Basic setting (базовые настройки: кнопки, ) */
 html {
   font-size: 10px;
 }
 body {
   font-family: 'ProximaNova_reg', sans-serif;
+  color: #1a1820;
+}
+a:hover {
+  text-decoration: none;
+}
+button,
+input,
+a {
+  outline: none;
 }
 /*Кнопка шапки*/
 .button {
@@ -32,6 +42,12 @@ body {
   border: none;
   text-transform: uppercase;
   border-radius: 5px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #df9d01;
 }
 /*Форма шапки*/
 .main-form {
@@ -72,10 +88,11 @@ body {
 section {
   padding: 10rem 0;
 }
-/* main */
+/* header */
 .main {
   padding: 1.5rem 0 3rem;
   background: #ffffff url(../img/bg-header.jpg) center center no-repeat;
+  background-size: cover;
 }
 .header {
   height: 7rem;
@@ -95,11 +112,11 @@ section {
   display: table;
   width: 100%;
   height: 7rem;
-  text-align: right;
 }
 .wrap-block {
   display: table-cell;
   vertical-align: middle;
+  text-align: right;
 }
 /*Главный заголовок*/
 .main-title h1 {
@@ -115,7 +132,7 @@ section {
   margin-top: 5rem;
 }
 .main-title span {
-  display: block;
+  display: inline-block;
   background-color: #70c849;
   color: #fff;
   padding: 25px 39px 18px 39px;
@@ -123,11 +140,136 @@ section {
   font-weight: 600;
   width: 220px;
   text-align: center;
-  height: ;
   margin-top: 6rem;
   margin-bottom: 3.2rem;
 }
 .main-title strong {
   font-size: 2.3rem;
   text-transform: uppercase;
+  font-weight: 900;
+}
+@media (max-width: 1199px) {
+  .col-form {
+    right: -20px;
+  }
+  .col-form .input-text {
+    left: 192px;
+  }
+}
+@media (max-width: 991px) {
+  .main {
+    background: #ffffff url(../img/bg-header.jpg) center right no-repeat;
+    background-size: cover;
+  }
+  .phone-block {
+    text-align: center;
+  }
+  .main-title {
+    text-align: center;
+  }
+  .main-title h1 {
+    margin-top: 3rem;
+  }
+  .main-title p {
+    margin-top: 2rem;
+  }
+  .main-title span {
+    margin-top: 2rem;
+  }
+  .main-form {
+    margin-top: 3rem;
+  }
+  .main-small {
+    color: #fff;
+  }
+  .col-form {
+    right: 0;
+  }
+  .min-signature {
+    margin-top: 2rem;
+  }
+}
+/*
+@media (max-width: 768px) {
+	.main {
+		background: #fff url(../img/bg-header.jpg) top left no-repeat;
+		background-size: cover;
+		}
+	.header-btn {
+		width: 21rem;
+	}
+		.main-small {
+		color: @colors-text;
+	}
+	.main-form {
+		width: 34.5rem;
+	}
+}*/
+@media (max-width: 767px) {
+  .main {
+    background: #ffffff url(../img/bg-header.jpg) top left no-repeat;
+    background-size: cover;
+    padding: 0 0 3rem 0;
+  }
+  .main-small {
+    color: #1a1820;
+  }
+  .main-title h1 {
+    font-size: 2.2rem;
+  }
+  .main-title strong {
+    font-size: 1.9rem;
+    margin: 2rem 0 2rem 0;
+    padding: 2rem 0 2rem 0;
+  }
+  .main-title p {
+    font-size: 1.8rem;
+  }
+  .main-title span {
+    margin-bottom: 1.3rem;
+  }
+  .main .phone-link {
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding-right: 0;
+  }
+  .main .phone-block {
+    text-align: left;
+  }
+  .main .header-btn {
+    width: 14rem;
+    height: 4rem;
+    font-size: 1.2rem;
+  }
+  .main .wrap-block {
+    padding-right: 3rem;
+  }
+  .col-white {
+    background-color: #fff;
+  }
+  .col-logo {
+    display: inline-block;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 4.5rem;
+  }
+  .main-form {
+    margin-top: 1.3rem;
+    padding: 2rem 2rem;
+    width: 100%;
+    height: 35rem;
+  }
+  .main-form .form-text {
+    font-size: 1.7rem;
+  }
+  .main-form .form-btn {
+    width: 25rem;
+  }
+  .col-form .input-text {
+    left: 50%;
+  }
+  .min-signature {
+    text-align: center;
+    margin-top: 2rem;
+  }
 }

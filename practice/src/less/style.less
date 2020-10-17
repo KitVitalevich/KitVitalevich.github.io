@@ -37,12 +37,21 @@
 @colors-text: #1a1820;
 @colors-danger: #ff0000;
 
+/* Медиа запросы */
+
 /* Basic setting (базовые настройки: кнопки, ) */
 html {
  font-size: 10px;
 }
 body {
 	.reg(); 
+	color: @colors-text;
+}
+a:hover {
+	text-decoration: none;
+}
+button, input, a {
+	outline: none;
 }
 /*Кнопка шапки*/
 .button {
@@ -54,6 +63,11 @@ body {
 	border: none;
 	text-transform: uppercase;
 	border-radius: 5px;
+	transition: all 0.2s;
+	&:hover {
+ cursor: pointer;
+ background-color: darken(@colors-btn, 5%);
+ }
 }
 /*Форма шапки*/
 .main-form {
@@ -87,19 +101,19 @@ body {
   width: 27rem;
   height: 6rem;
   margin-bottom: 1.2rem;
+ }
 }
-}
-
 
 /* Typography (типографика: заголоки, ) */
 section {
 	padding: 10rem 0;
 }
 
-/* main */
+/* header */
 .main {
  padding: 1.5rem 0 3rem;
  background: #fff url(../img/bg-header.jpg) center center no-repeat; 
+ background-size: cover;
 }
 .header {
 	height: 7rem;
@@ -121,10 +135,10 @@ section {
 	display: table;
 	width: 100%;
 	height: 7rem;
-	text-align: right;
 	&-block {		
   display: table-cell;
-  vertical-align: middle;  
+  vertical-align: middle;
+  text-align: right;  
 	}
 }
 /*Главный заголовок*/
@@ -142,7 +156,7 @@ section {
 		margin-top: 5rem;
 	}
 	span {
-		display: block;
+		display: inline-block;
 		background-color: #70c849;
 		color: #fff;
 		padding: 25px 39px 18px 39px;
@@ -150,12 +164,144 @@ section {
 		font-weight: 600;
 		width: 220px;
 		text-align: center;
-		height: ;
 		margin-top: 6rem;
 		margin-bottom: 3.2rem;
 	}
  strong {
  	font-size: 2.3rem;
  	text-transform: uppercase;
+ 	font-weight: 900;
+ }
+}
+
+@media (max-width: 1199px) {
+	.col-form {
+		right: -20px;
+		.input-text {
+			left: 192px;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.main {
+		background: #fff url(../img/bg-header.jpg) center right no-repeat;
+		background-size: cover; 
+	}
+	.phone-block {
+		text-align: center;
+	}
+	.main-title {
+		text-align: center;
+		h1 {
+			margin-top: 3rem;
+		}
+		p {
+			margin-top: 2rem;
+		}
+		span {
+			margin-top: 2rem;
+		}
+	}
+	.main-form {
+		margin-top: 3rem;
+	}
+	.main-small {
+		color: #fff;
+	}
+.col-form {
+		right: 0;
+	}
+	.min-signature {
+ 	margin-top: 2rem;
+ }
+}
+/*
+@media (max-width: 768px) {
+	.main {
+		background: #fff url(../img/bg-header.jpg) top left no-repeat;
+		background-size: cover;
+		}
+	.header-btn {
+		width: 21rem;
+	}
+		.main-small {
+		color: @colors-text;
+	}
+	.main-form {
+		width: 34.5rem;
+	}
+}*/
+
+@media (max-width: 767px) {
+	.main {
+		background: #fff url(../img/bg-header.jpg) top left no-repeat;
+		background-size: cover;
+		padding: 0 0 3rem 0;
+		&-small {
+		color: @colors-text;
+	}
+		&-title {
+		h1 {
+			font-size: 2.2rem;
+		}
+		strong {
+			font-size: 1.9rem;
+			margin: 2rem 0 2rem 0;
+			padding: 2rem 0 2rem 0;
+		}
+	 p {
+			font-size: 1.8rem;
+		}
+		span {
+			margin-bottom: 1.3rem;
+		}
+	}
+	.phone-link {
+		font-size: 1.4rem;
+		font-weight: 700;
+		padding-right: 0;
+	}
+	.phone-block {
+		text-align: left;
+	}
+	.header-btn {
+		width: 14rem;
+		height: 4rem;
+		font-size: 1.2rem;
+	}
+	.wrap-block {
+		padding-right: 3rem;
+	}
+}
+	.col-white {
+		background-color: #fff;
+	}
+	.col-logo {
+		display: inline-block;
+		text-align: center;
+		margin-top: 2rem;
+		margin-bottom: 4.5rem;
+	}
+	.main-form {
+		margin-top: 1.3rem;
+		padding: 2rem 2rem;
+		width: 100%;
+		height: 35rem;
+	.form-text {
+		font-size: 1.7rem;
+	}
+	.form-btn {
+		width: 25rem;
+	}
+}
+	.col-form {
+	 .input-text {
+		 left: 50%;
+	 }
+ }
+ .min-signature {
+ 	text-align: center;
+ 	margin-top: 2rem;
  }
 }
