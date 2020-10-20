@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Всплывающие (модальные) окна</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<div class="container">
+	<button class="btn btn-success" data-toggle="modal" data-target="#delite">Удалить</button>
+</div>
+
+<!-- Модальное окно от Bootstrap -->
+<div class="modal fade" id="delite">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Вы действительно хотите удалить файлы?</h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Нет</button>
+        <button type="button" class="btn btn-primary">Да</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Библиотека jQuery -->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<!-- Для модальных окон от bootstrap нужно подключить js-файлы -->
+	<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
