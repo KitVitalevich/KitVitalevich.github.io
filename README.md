@@ -35,4 +35,4 @@
 
 [Урок 17](https://kitvitalevich.github.io/lesson_17/src/index.html) - модальные окна
 
-[Практика](KitVitalevich.github.io/practice/src/practice/src/index.html) - урок 5. модальные окна
+[Практика](https://kitvitalevich.github.io/practice/src/practice/src/index.html) - урок 5. модальные окна
