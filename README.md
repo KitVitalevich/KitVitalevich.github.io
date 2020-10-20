@@ -32,3 +32,5 @@
 [Урок 16](https://kitvitalevich.github.io/lesson_17/src/css/index.html) - слайдеры
 
 [Практика](https://kitvitalevich.github.io/practice/src/index.html) - урок 4. сверстан блок с преимуществами со слайдером
+
+[Урок 17](https://kitvitalevich.github.io/lesson_17/src/index.html) - модальные окна
