@@ -30,3 +30,5 @@
 [Практика](https://kitvitalevich.github.io/practice/src/index.html) - урок 3. сделан адаптив и эффекты при наведении 
 
 [Урок 16](https://kitvitalevich.github.io/lesson_17/src/css/index.html) - слайдеры
+
+[Практика](https://kitvitalevich.github.io/practice/src/index.html) - урок 4. сверстан блок с преимуществами со слайдером
