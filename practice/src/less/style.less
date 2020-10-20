@@ -30,6 +30,7 @@
 .bold() {
 	font-family: 'ProximaNova_bold', sans-serif;
 	}
+
 /* Colors (цвета) */
 @colors-btn: #f8af01;
 @colors-icon-green: #45b613;
@@ -48,7 +49,7 @@ body {
 a:hover {
 	text-decoration: none;
 }
-button, input, a {
+button, input, a, textarea {
 	outline: none;
 }
 
@@ -180,6 +181,7 @@ section {
  background-color: darken(@colors-btn, 5%);
  }
 }
+
 /* Блок с преимуществами */
 .features {
 	padding: 8rem 0;
@@ -244,6 +246,61 @@ section {
   }
 	}
 }
+
+/* Модальные окна */
+.popup {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+	background-color: rgba(0, 0, 0, 0.5);
+	&-dialog {
+	}
+	&-content {
+  position: fixed;
+	 top: 10%;
+	 left: 50%;
+	 transform: translateX(-50%);
+	 background-color: #fff;
+	 padding: 2.5rem 6rem;
+	 text-align: center;
+	 width: 35rem;
+	 height: 50rem;
+	}
+	&-close {
+		position: absolute;
+		top: -1.5rem;
+		right: -2.5rem;
+		width: 2rem;
+		font-size: 3rem;
+		text-align: center;
+		color: #fff;
+		background-color: transparent;
+		border: none;
+	}
+	&-header {
+ .bold();
+	}
+	.popup-textarea {
+		height: 9rem;
+		padding: 1rem;
+	}
+	.popup-form {
+ margin: 0;
+ padding: 0;
+ width: 100%;
+ height: 0;
+	}
+	.popup-btn {
+		width: 100%;
+	}
+}
+
 
 @media (max-width: 991px) {
 	.main {

@@ -32,7 +32,7 @@
    			 	<div class="col-white col-lg-3 col-lg-push-2 col-md-4 col-md-push-3 col-sm-4 col-sm-push-4 col-xs-6">
    			 	 <div class="wrap">
    			 		 <div class="wrap-block">
-   					   <button class="button header-btn">получить консультацию</button>
+   					   <button class="button header-btn btn-popup">получить консультацию</button>
    			 	   </div>
    			 		</div>
    			 	</div>
@@ -67,7 +67,7 @@
                 <p class="input-text">Номер телефона</p>
                 <input class="form-input1" type="text">
               </form>
-      <!-- Кнопка шапки -->
+      <!-- Кнопка формы шапки -->
                 <button class="button form-btn">Оставьте заявку</button> <br>
                 <small>Приедем в день обращения*</small>
               </div>
@@ -136,7 +136,32 @@
     </div>
   </section>
 
-
+       <!-- Модальные окна -->
+       <!-- Получить консультацию -->
+  <div class="popup">
+    <!-- само (белое) модальное окно -->
+    <div class="popup-dialog">
+      <!-- содержимое модального окна -->
+      <div class="popup-content">
+        <button class="popup-close">&times;</button>
+        <h4 class="popup-header">
+          Заинтересовало?
+        </h4>
+        <p>Оставьте свои контактные данные <br> для связи</p>
+        <div class="popup-form main-form">
+          <form action="#">
+            <p class="input-text">Ваше имя</p>
+            <input class="form-input1" type="text">
+            <p class="input-text">Номер телефона</p>
+            <input class="form-input1" type="text">
+            <p class="input-text">Сообщение</p>
+            <textarea class="form-input1 popup-textarea" rows="10"></textarea>
+            <button class="button form-btn popup-btn">Оставьте заявку</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -158,6 +183,14 @@
     <!-- Инициализируем слайдер -->
     <script>
       $(document).ready(function(){
+        $('.btn-popup').on('click', function(event) {
+          event.preventDefault();
+          $('.popup').fadeIn()            
+        });
+        $('.popup-close').on('click', function(event) {
+          event.preventDefault();
+          $('.popup').fadeOut()
+        });
         $('.features-slider').slick({
           infinite: true,
             slidesToShow: 4,
