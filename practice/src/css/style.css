@@ -16,7 +16,6 @@
   font-display: swap;
 }
 /* Colors (цвета) */
-/* Медиа запросы */
 /* Basic setting (базовые настройки: кнопки, ) */
 html {
   font-size: 10px;
@@ -33,23 +32,77 @@ input,
 a {
   outline: none;
 }
-/*Кнопка шапки*/
-.button {
-  height: 5rem;
-  width: 22.5rem;
-  color: #fff;
-  background-color: #f8af01;
-  border: none;
+/* Typography (типографика: заголоки, ) */
+section {
+  padding: 10rem 0;
+}
+.section-header {
+  text-align: center;
+  font-family: 'ProximaNova_bold', sans-serif;
+  margin: 2rem 0 11rem;
+  font-size: 3.6rem;
+}
+/* header */
+.main {
+  padding: 1.5rem 0 3rem;
+  background: #ffffff url(../img/bg-header.jpg) center center no-repeat;
+  background-size: cover;
+}
+.header {
+  height: 7rem;
+}
+.phone-block {
+  text-align: right;
+}
+.phone-link {
+  display: inline-block;
+  font-size: 15px;
+  color: #1a1820;
+  height: 7rem;
+  line-height: 7rem;
+  padding-right: 2rem;
+}
+.wrap {
+  display: table;
+  width: 100%;
+  height: 7rem;
+}
+.wrap-block {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: right;
+}
+/* Главный заголовок */
+.main-title h1 {
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 4rem;
   text-transform: uppercase;
-  border-radius: 5px;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  line-height: 1.4;
+  margin-top: 9rem;
 }
-.button:hover {
-  cursor: pointer;
-  background-color: #df9d01;
+.main-title p {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  margin-top: 5rem;
 }
-/*Форма шапки*/
+.main-title span {
+  display: inline-block;
+  background-color: #70c849;
+  color: #fff;
+  padding: 25px 39px 18px 39px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  width: 220px;
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 3.2rem;
+}
+.main-title strong {
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+/* Форма шапки */
 .main-form {
   width: 35.5rem;
   height: 41rem;
@@ -85,76 +138,80 @@ a {
   height: 6rem;
   margin-bottom: 1.2rem;
 }
-/* Typography (типографика: заголоки, ) */
-section {
-  padding: 10rem 0;
-}
-/* header */
-.main {
-  padding: 1.5rem 0 3rem;
-  background: #ffffff url(../img/bg-header.jpg) center center no-repeat;
-  background-size: cover;
-}
-.header {
-  height: 7rem;
-}
-.phone-block {
-  text-align: right;
-}
-.phone-link {
-  display: inline-block;
-  font-size: 15px;
-  color: #1a1820;
-  height: 7rem;
-  line-height: 7rem;
-  padding-right: 2rem;
-}
-.wrap {
-  display: table;
-  width: 100%;
-  height: 7rem;
-}
-.wrap-block {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: right;
-}
-/*Главный заголовок*/
-.main-title h1 {
-  font-family: 'ProximaNova_bold', sans-serif;
-  font-size: 4rem;
-  text-transform: uppercase;
-  line-height: 1.4;
-  margin-top: 9rem;
-}
-.main-title p {
-  font-size: 2.4rem;
-  line-height: 1.2;
-  margin-top: 5rem;
-}
-.main-title span {
-  display: inline-block;
-  background-color: #70c849;
+/* Кнопка шапки */
+.button {
+  height: 5rem;
+  width: 22.5rem;
   color: #fff;
-  padding: 25px 39px 18px 39px;
-  font-size: 1.8rem;
-  font-weight: 600;
-  width: 220px;
-  text-align: center;
-  margin-top: 6rem;
-  margin-bottom: 3.2rem;
-}
-.main-title strong {
-  font-size: 2.3rem;
+  background-color: #f8af01;
+  border: none;
   text-transform: uppercase;
-  font-weight: 900;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
+.button:hover {
+  cursor: pointer;
+  background-color: #df9d01;
+}
+/* Блок с преимуществами */
+.features {
+  padding: 8rem 0;
+}
+.features-slider {
+  height: 29rem;
+}
+.features-block {
+  text-align: center;
+}
+.features-block h3 {
+  padding: 4rem 0 3rem 0;
+  font-size: 2rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.features-block p {
+  display: inline-block;
+  width: 95%;
+  font-size: 1.4rem;
+}
+.features-img img {
+  display: block;
+  margin: 0 auto;
+  height: 6.6rem;
+}
+.slick-active {
+  outline: none;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+}
+.prev {
+  left: 0;
+  background: url(../img/left-arrow.svg) center no-repeat;
+  background-size: 70%;
+}
+.next {
+  right: 0;
+  background: url(../img/right-arrow.svg) center no-repeat;
+  background-size: 70%;
+}
+/* Медиа запросы */
 @media (max-width: 1199px) {
   .col-form {
     right: -20px;
   }
   .col-form .input-text {
     left: 192px;
+  }
+  .features-block h3 {
+    font-size: 1.9rem;
   }
 }
 @media (max-width: 991px) {
@@ -189,23 +246,10 @@ section {
   .min-signature {
     margin-top: 2rem;
   }
+  .features-block h3 {
+    font-size: 2rem;
+  }
 }
-/*
-@media (max-width: 768px) {
-	.main {
-		background: #fff url(../img/bg-header.jpg) top left no-repeat;
-		background-size: cover;
-		}
-	.header-btn {
-		width: 21rem;
-	}
-		.main-small {
-		color: @colors-text;
-	}
-	.main-form {
-		width: 34.5rem;
-	}
-}*/
 @media (max-width: 767px) {
   .main {
     background: #ffffff url(../img/bg-header.jpg) top left no-repeat;
@@ -272,5 +316,24 @@ section {
   .min-signature {
     text-align: center;
     margin-top: 2rem;
+  }
+  .features {
+    padding: 5rem 0;
+  }
+  .section-header {
+    margin-bottom: 5.5rem;
+    font-size: 2.6rem;
+  }
+  .features-block h3 {
+    padding: 1.5rem;
+  }
+  .features-block p {
+    font-size: 1.6rem;
+  }
+  .arrow {
+    top: 15%;
+  }
+  .features-slider {
+    height: 26rem;
   }
 }

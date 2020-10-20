@@ -37,8 +37,6 @@
 @colors-text: #1a1820;
 @colors-danger: #ff0000;
 
-/* Медиа запросы */
-
 /* Basic setting (базовые настройки: кнопки, ) */
 html {
  font-size: 10px;
@@ -53,61 +51,16 @@ a:hover {
 button, input, a {
 	outline: none;
 }
-/*Кнопка шапки*/
-.button {
-	height: 5rem;
-	width: 22.5rem;
-	color: #fff;
-	border-radius: 5px;
-	background-color: @colors-btn;
-	border: none;
-	text-transform: uppercase;
-	border-radius: 5px;
-	transition: all 0.2s;
-	&:hover {
- cursor: pointer;
- background-color: darken(@colors-btn, 5%);
- }
-}
-/*Форма шапки*/
-.main-form {
-	width: 35.5rem;
-	height: 41rem;
-	text-align: center;
-	padding: 3rem 4rem;
-	margin-top: 11rem;
-	background-color: #fff;
-	.form-text {
-		font-size: 1.8rem;
-	}
-	.form-input1 {
-		display: block;
-		width: 100%;
-		height: 5rem;
-		border: 1px solid #dddddd;
-  border-radius: 5px;
-  margin: 2.5rem 0;
-  padding-left: 1rem;
-	}
-	.input-text {
-		position: absolute;
-		font-size: 1.4rem;
-		left: 50%;
-		transform: translateX(-50%) translateY(-50%);
-		padding: 0 0.5rem;
-		background-color: #fff;
-		}
-	.form-btn {
-	 font-size: 1.6rem;
-  width: 27rem;
-  height: 6rem;
-  margin-bottom: 1.2rem;
- }
-}
 
 /* Typography (типографика: заголоки, ) */
 section {
 	padding: 10rem 0;
+}
+.section-header {
+	text-align: center;
+	.bold();
+	margin: 2rem 0 11rem;
+	font-size: 3.6rem;
 }
 
 /* header */
@@ -142,7 +95,8 @@ section {
   text-align: right;  
 	}
 }
-/*Главный заголовок*/
+
+/* Главный заголовок */
 .main-title {
 	h1 {
   .bold();
@@ -175,12 +129,119 @@ section {
  }
 }
 
+/* Форма шапки */
+.main-form {
+	width: 35.5rem;
+	height: 41rem;
+	text-align: center;
+	padding: 3rem 4rem;
+	margin-top: 11rem;
+	background-color: #fff;
+	.form-text {
+		font-size: 1.8rem;
+	}
+	.form-input1 {
+		display: block;
+		width: 100%;
+		height: 5rem;
+		border: 1px solid #dddddd;
+  border-radius: 5px;
+  margin: 2.5rem 0;
+  padding-left: 1rem;
+	}
+	.input-text {
+		position: absolute;
+		font-size: 1.4rem;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		padding: 0 0.5rem;
+		background-color: #fff;
+		}
+	.form-btn {
+	 font-size: 1.6rem;
+  width: 27rem;
+  height: 6rem;
+  margin-bottom: 1.2rem;
+ }
+}
+/* Кнопка шапки */
+.button {
+	height: 5rem;
+	width: 22.5rem;
+	color: #fff;
+	border-radius: 5px;
+	background-color: @colors-btn;
+	border: none;
+	text-transform: uppercase;
+	border-radius: 5px;
+	transition: all 0.2s;
+	&:hover {
+ cursor: pointer;
+ background-color: darken(@colors-btn, 5%);
+ }
+}
+/* Блок с преимуществами */
+.features {
+	padding: 8rem 0;
+	&-slider {
+		height: 29rem;
+	}
+ &-block {
+	 text-align: center;
+	 h3 {
+	 	padding: 4rem 0 3rem 0;
+	 	font-size: 2rem;
+	 	.bold()
+	 }
+	 p {
+	 	display: inline-block;
+	 	width: 95%;
+	 	font-size: 1.4rem;
+	 }
+	}
+	&-img {
+	 img {
+		 display: block;
+		 margin: 0 auto;
+		 height: 6.6rem;
+		}
+	}
+}
+.slick-active {
+	outline: none;
+}
+.arrow {
+	position: absolute;
+ top: 50%;
+ transform: translateY(-50%);
+ z-index: 99;
+ width: 2rem;
+ height: 2rem;
+ border: none;
+}
+.prev {
+	left: 0;
+	background: url(../img/left-arrow.svg) center no-repeat;
+	background-size: 70%;
+}
+.next {
+	right: 0;
+	background: url(../img/right-arrow.svg) center no-repeat;
+	background-size: 70%;
+}
+
+/* Медиа запросы */
 @media (max-width: 1199px) {
 	.col-form {
 		right: -20px;
 		.input-text {
 			left: 192px;
 		}
+	}
+	.features-block {
+  h3 {
+  	font-size: 1.9rem;
+  }
 	}
 }
 
@@ -216,23 +277,12 @@ section {
 	.min-signature {
  	margin-top: 2rem;
  }
+ .features-block {
+ 	h3 {
+ 		font-size: 2rem;
+ 	}
+ }
 }
-/*
-@media (max-width: 768px) {
-	.main {
-		background: #fff url(../img/bg-header.jpg) top left no-repeat;
-		background-size: cover;
-		}
-	.header-btn {
-		width: 21rem;
-	}
-		.main-small {
-		color: @colors-text;
-	}
-	.main-form {
-		width: 34.5rem;
-	}
-}*/
 
 @media (max-width: 767px) {
 	.main {
@@ -304,5 +354,26 @@ section {
  .min-signature {
  	text-align: center;
  	margin-top: 2rem;
+ }
+ .features {
+ 	padding: 5rem 0;
+ }
+ .section-header {
+ 	margin-bottom: 5.5rem;
+ 	font-size: 2.6rem;
+ }
+ .features-block {
+ 	h3 {
+ 		padding: 1.5rem;
+ 	}
+ 	p {
+ 		font-size: 1.6rem;
+ 	}
+ }
+ .arrow {
+ 	top: 15%;
+ }
+ .features-slider {
+ 	height: 26rem;
  }
 }
