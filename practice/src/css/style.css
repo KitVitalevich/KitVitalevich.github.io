@@ -389,4 +389,13 @@ section {
   .features-slider {
     height: 26rem;
   }
+  .popup-content {
+    width: 25rem;
+    height: 46rem;
+    padding: 1rem 2rem;
+  }
+  .popup .popup-btn {
+    width: 100%;
+    height: 5rem;
+  }
 }
