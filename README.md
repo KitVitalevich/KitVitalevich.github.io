@@ -36,3 +36,5 @@
 [Урок 17](https://kitvitalevich.github.io/lesson_17/src/index.html) - модальные окна
 
 [Практика](https://kitvitalevich.github.io/practice/src/practice/src/index.html) - урок 5. модальные окна
+
+[Урок 18.1](https://kitvitalevich.github.io/tabs/src/index.html?#) - табы
