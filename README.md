@@ -37,6 +37,6 @@
 
 [Практика](https://kitvitalevich.github.io/practice/src/practice/src/index.html) - урок 5. модальные окна
 
-[Урок 18.1](https://kitvitalevich.github.io/tabs/src/index.html?#) - табы
+[Урок 18.1](https://kitvitalevich.github.io/tabs/src/index.html?#) и [Урок 18.2](https://kitvitalevich.github.io/accordion/src/index.html) - табы и аккардеон
 
-[Урок 18.2](https://kitvitalevich.github.io/accordion/src/index.html) - аккардеон
+
