@@ -54,14 +54,16 @@ button, input, a, textarea {
 }
 
 /* Typography (типографика: заголоки, ) */
-section {
-	padding: 10rem 0;
-}
 .section-header {
 	text-align: center;
-	.bold();
-	margin: 2rem 0 11rem;
-	font-size: 3.6rem;
+	margin-top: 11rem;
+	h1 {
+		font-size: 3.6rem;
+		.bold();
+	}
+	p {
+		font-size: 1.4rem;
+	}
 }
 
 /* header */
@@ -184,7 +186,13 @@ section {
 
 /* Блок с преимуществами */
 .features {
-	padding: 8rem 0;
+	margin-bottom: 11rem;
+	h1 {
+		.bold();
+	}
+	&-header {
+		margin-bottom: 12rem;
+	}
 	&-slider {
 		height: 29rem;
 	}
@@ -232,20 +240,108 @@ section {
 	background-size: 70%;
 }
 
-/* Медиа запросы */
-@media (max-width: 1199px) {
-	.col-form {
-		right: -20px;
-		.input-text {
-			left: 192px;
+/* Блок с прайсом */
+.price {
+	background: @colors-icon-green url(../img/price/price-fon.png) center;
+	&-btn {
+		width: 35rem;
+		height: 6rem;
+		font-size: 1.8rem;
+		margin: 3rem 0;
+	}
+	&-btn-none {
+		display: none;
+	}
+	&-block-btn {
+		margin: 0 0 4rem 0;
+		width: 20rem;
+		height: 6rem;
+	}
+	&-title {
+		margin-bottom: 4rem;
+	}
+	&-img {
+		padding-bottom: 2.5rem;
+	}
+	&-tag {
+		.bold();
+		font-size: 2.5rem;
+		small {
+			font-size: 1.5rem;
 		}
 	}
-	.features-block {
-  h3 {
-  	font-size: 1.9rem;
-  }
+	&-title, .price-text {
+		color: #fff;
+	}
+	&-block {
+		background-color: #fff;
+		box-shadow: 7px 12px 21px 0 rgba(0, 0, 0, 0.17);
+		text-align: center;
+		min-height: 50rem;
+		margin: 4rem 0 12rem 0;
+		p {
+			font-size: 1.9rem;
+			padding: 4rem 0 1.5rem;
+			.bold();
+		}
+	}
+	&-list {
+		margin-top: 2rem;
+		min-height: 15rem;
+		list-style: none;
+		padding-left: 0;
+		font-size: 1.6rem;
+		line-height: 1.7;
+		li {
+			&:before {
+				content: '';
+				display: inline-block;
+				margin-right: 1rem; 
+				width: 1.4rem;
+				height: 1.4rem;
+				background: url(../img/price/chack.svg) no-repeat center;
+				background-size: 100%;
+				vertical-align: middle;
+			}
+		}
+	}
+	/* Аккардион для блока с прайсом */
+.accordion { 
+	margin: 10px 0;
+	&-s {
+		color: #006b00;
+		text-decoration: underline;
+		font-size: 1.8rem;
+	}
+	&-list {
+		margin-top: 2rem;
+		min-height: 15rem;
+		list-style: none;
+		padding-left: 0;
+		font-size: 1.6rem;
+		line-height: 1.7;
+		li {
+			&:before {
+				content: '';
+				display: inline-block;
+				margin-right: 1rem; 
+				width: 1.4rem;
+				height: 1.4rem;
+				background: url(../img/price/chack.svg) no-repeat center;
+				background-size: 100%;
+				vertical-align: middle;
+			}
+		}
 	}
 }
+a[href^="#accordion"] + *{display: none;}
+#accordion-css3 :target{display: block;}
+&-accordion {
+	display: none;
+}
+}
+
+
 
 /* Модальные окна */
 .popup {
@@ -259,8 +355,6 @@ section {
 	height: 100%;
 	z-index: 9;
 	background-color: rgba(0, 0, 0, 0.5);
-	&-dialog {
-	}
 	&-content {
   position: fixed;
 	 top: 10%;
@@ -301,6 +395,25 @@ section {
 	}
 }
 
+/* Медиа запросы */
+@media (max-width: 1199px) {
+	.col-form {
+		right: -20px;
+		.input-text {
+			left: 192px;
+		}
+	}
+	.features-block {
+  h3 {
+  	font-size: 1.9rem;
+  }
+	}
+	.price {
+		&-img {
+			width: 27rem;
+		}
+	}
+}
 
 @media (max-width: 991px) {
 	.main {
@@ -413,7 +526,11 @@ section {
  	margin-top: 2rem;
  }
  .features {
- 	padding: 5rem 0;
+ 	padding: 4rem 0 2rem 0;
+ 	margin-bottom: 0;
+ }
+ .features-header {
+ 	margin-top: 1rem;
  }
  .section-header {
  	margin-bottom: 5.5rem;
@@ -441,5 +558,48 @@ section {
  .popup .popup-btn {
 		width: 100%;
 		height: 5rem;
+	}
+	.section-header p {
+		font-size: 1.8rem;
+	}
+	.price {
+		&-header {
+			margin: 0;
+		}
+		&-title {
+			margin: 4rem 0 2rem 0;
+		}
+		&-text {
+			font-size: 1.8rem;
+		}
+		&-block {
+			margin: 2rem 0 2rem 0;
+			min-height: 45rem;
+			p {
+				font-size: 1.8rem;
+				padding: 2rem 0 1rem;
+			}
+			&-btn {
+				margin: 1rem 0 4rem;
+			}
+		}
+		&-btn {
+			display: none;
+			width: 28rem;
+			font-size: 1.4rem;
+		}
+		&-btn-none {
+			display: inline;
+			margin: 1rem 0 1rem 0;
+		}
+		&-list {
+			display: none;
+		}
+		&-accordion {
+			display: inline;
+		}
+	}
+	.btn-center {
+		text-align: center;
 	}
 }
