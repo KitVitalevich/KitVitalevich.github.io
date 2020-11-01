@@ -39,4 +39,4 @@
 
 [Урок 18.1](https://kitvitalevich.github.io/tabs/src/index.html?#) и [Урок 18.2](https://kitvitalevich.github.io/accordion/src/index.html) - табы и аккардеон
 
-[Практика] (https://kitvitalevich.github.io/practice/src/index.html) - урок 6. сверстан блок с ценами
+[Практика](https://kitvitalevich.github.io/practice/src/index.html) - урок 6. сверстан блок с ценами
