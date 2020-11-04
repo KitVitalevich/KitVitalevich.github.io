@@ -338,10 +338,73 @@ a[href^="#accordion"] + *{display: none;}
 #accordion-css3 :target{display: block;}
 &-accordion {
 	display: none;
-}
+ }
 }
 
-
+/* Блок с отзывами */
+.feedback {
+	background: url(../img/feedback/feedback-fon.jpg) no-repeat center;
+	background-size: cover;
+	&-slider {
+		background-color: #fff;
+		box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
+		padding: 5.5rem 6rem;
+		margin: 10rem 0 10rem;
+		height: 50rem;
+		&-btn {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 5rem;
+			height: 6rem;
+			background-color: @colors-icon-green;
+			border: none;
+			img {
+				width: 2rem;
+			}
+		}
+	}
+	&-prev-btn {
+  left: -5rem;
+	}
+	&-next-btn {
+		left: 114rem;
+	}
+}
+.review {
+	font-size: 1.6rem;
+	margin-bottom: 4rem;
+}
+.media {
+	&-span {
+		font-size: 1.4rem;
+	}
+	&-heading {
+		font-size: 1.6rem;
+		.bold();
+	}
+}
+.description {
+	position: relative;
+ font-size: 1.5rem;
+ font-style: italic;
+ border: 2px solid @colors-icon-green;
+ margin-top: 2rem;
+ padding: 2rem;
+ &::before {
+ 	content: '';
+ 	display: block;
+ 	position: absolute;
+ 	top: -2rem;
+ 	left: 4rem;
+ 	width: 2rem;
+ 	height: 2rem;
+ 	border: 2px solid @colors-icon-green;
+ 	border-bottom: none;
+ 	border-top-right-radius: 100px;
+ 	background-color: #fff;
+ }
+}
 
 /* Модальные окна */
 .popup {
