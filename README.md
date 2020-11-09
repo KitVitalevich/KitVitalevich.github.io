@@ -44,3 +44,5 @@
 [Урок 19](https://kitvitalevich.github.io/lesson_19/tabs/src/index.html) - анимации
 
 [Практика](https://kitvitalevich.github.io/practice/src/index.html) - урок 6. блок с отзывами
+
+[Урок 20](https://kitvitalevich.github.io/lesson_20/src/index.html) - видео фон на сайте
