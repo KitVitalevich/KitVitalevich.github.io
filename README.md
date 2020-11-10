@@ -46,3 +46,5 @@
 [Практика](https://kitvitalevich.github.io/practice/src/index.html) - урок 6. блок с отзывами
 
 [Урок 20](https://kitvitalevich.github.io/lesson_20/src/index.html) - видео фон на сайте
+
+[Практика](https://kitvitalevich.github.io/practice/src/index.html) - урок 7. доделан блок с отзывами + его адаптив
