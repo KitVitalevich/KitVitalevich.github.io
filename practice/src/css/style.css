@@ -106,18 +106,16 @@ textarea {
   font-weight: 900;
 }
 /* Форма шапки */
-.main-form {
-  width: 35.5rem;
-  height: 41rem;
+.form {
   text-align: center;
   padding: 3rem 4rem;
   margin-top: 11rem;
   background-color: #fff;
 }
-.main-form .form-text {
+.form .form-text {
   font-size: 1.8rem;
 }
-.main-form .form-input1 {
+.form .form-input1 {
   display: block;
   width: 100%;
   height: 5rem;
@@ -126,7 +124,7 @@ textarea {
   margin: 2.5rem 0;
   padding-left: 1rem;
 }
-.main-form .input-text {
+.form .input-text {
   position: absolute;
   font-size: 1.4rem;
   left: 50%;
@@ -135,7 +133,7 @@ textarea {
   padding: 0 0.5rem;
   background-color: #fff;
 }
-.main-form .form-btn {
+.form .form-btn {
   font-size: 1.6rem;
   width: 27rem;
   height: 6rem;
@@ -315,6 +313,7 @@ textarea {
 }
 /* Блок с отзывами */
 .feedback {
+  position: relative;
   background: url(../img/feedback/feedback-fon.jpg) no-repeat center;
   background-size: cover;
 }
@@ -323,7 +322,7 @@ textarea {
   -webkit-box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
           box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
   padding: 5.5rem 6rem;
-  margin: 10rem 0 10rem;
+  margin: 10rem 0 6rem;
   height: 50rem;
 }
 .feedback-slider-btn {
@@ -376,6 +375,39 @@ textarea {
   border-bottom: none;
   border-top-right-radius: 100px;
   background-color: #fff;
+}
+.feedback-text-left {
+  margin-left: -2.5rem;
+}
+.feedback-text-right {
+  margin-left: 2.5rem;
+  width: 12rem;
+}
+.feedback-form {
+  margin: 0;
+  margin-bottom: 10rem;
+}
+.feedback-form-text {
+  font-family: 'ProximaNova_bold', sans-serif;
+  margin-bottom: 4rem;
+}
+.feedback-btn {
+  margin-top: 1rem;
+}
+.form .feedback-form-input {
+  margin: 0;
+  width: 20rem;
+}
+.input-name {
+  margin-left: -5.5rem;
+}
+.hand {
+  position: absolute;
+  left: -5rem;
+  bottom: 0;
+}
+.feedback-small {
+  display: none;
 }
 /* Модальные окна */
 .popup {
@@ -443,6 +475,18 @@ textarea {
   .price-img {
     width: 27rem;
   }
+  .feedback-next-btn {
+    left: 94rem;
+  }
+  .description {
+    padding: 1rem;
+  }
+  .hand {
+    left: -20rem;
+  }
+  .form .feedback-form-input {
+    width: 25rem;
+  }
 }
 @media (max-width: 991px) {
   .main {
@@ -478,6 +522,26 @@ textarea {
   }
   .features-block h3 {
     font-size: 2rem;
+  }
+  .feedback-slider {
+    height: 90rem;
+  }
+  .feedback-next-btn {
+    left: 72rem;
+  }
+  .review {
+    margin-top: 3rem;
+  }
+  .hand {
+    display: none;
+  }
+  .form .feedback-form-input {
+    margin: 1rem 0 1rem 2.5rem;
+  }
+  .form .feedback-input-text {
+    -webkit-transform: translateX(-25%);
+            transform: translateX(-25%);
+    top: 2%;
   }
 }
 @media (max-width: 767px) {
@@ -619,5 +683,80 @@ textarea {
   }
   .btn-center {
     text-align: center;
+  }
+  .feedback-btn {
+    margin-left: -0.75rem;
+  }
+  .feedback-header {
+    margin: 3rem 0 3rem;
+  }
+  .feedback-header h1 {
+    font-size: 2.4rem;
+  }
+  .feedback-slider {
+    padding: 1rem;
+    margin: 0 0 3rem;
+    height: 68rem;
+  }
+  .feedback-slider-btn {
+    background-color: #fff;
+  }
+  .feedback-prev-btn {
+    left: 0;
+  }
+  .feedback-next-btn {
+    left: 0;
+  }
+  .review {
+    margin: 1rem 0 1rem 0;
+  }
+  .feedback-dots {
+    position: absolute;
+    margin-top: 2rem;
+    left: 50%;
+    -webkit-transform: translateX(-70%);
+            transform: translateX(-70%);
+  }
+  .feedback-dots li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 0.5rem;
+  }
+  .feedback-dots button {
+    font-size: 0;
+    width: 1rem;
+    height: 1rem;
+    background-color: #c7c9c6;
+    border: none;
+    border-radius: 100%;
+  }
+  .feedback-dots button:hover {
+    content: '#';
+    background-color: #358015;
+  }
+  .input-name {
+    margin-left: -6rem;
+  }
+  .form .feedback-input-text {
+    left: 28%;
+  }
+  .form .feedback-form-input {
+    margin-left: -2rem;
+  }
+  .form .feedback-form-text {
+    font-size: 1.6rem;
+    margin: 0 0 1.5rem;
+  }
+  .feedback-small {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10rem;
+  }
+  .feedback-form {
+    margin-bottom: 1rem;
   }
 }
