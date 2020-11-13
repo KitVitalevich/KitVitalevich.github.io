@@ -48,3 +48,5 @@
 [Урок 20](https://kitvitalevich.github.io/lesson_20/src/index.html) - видео фон на сайте
 
 [Практика](https://kitvitalevich.github.io/practice/src/index.html) - урок 7. доделан блок с отзывами + его адаптив
+
+[Практика](https://kitvitalevich.github.io/practice/src/index.html) - урок 8. сверстаны блоки со схемой и все включено
