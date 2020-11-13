@@ -441,6 +441,75 @@ a[href^="#accordion"] + *{display: none;}
 	display: none;
 }
 
+/* Блок со схемой */
+.sсhema {
+	&-header {
+		p {
+			margin: 3rem 0 5rem;
+		}
+	}
+	&-block {
+		min-height: 30rem;
+		h3 {
+			.bold();
+			font-size: 2.2rem;
+		}
+		p {
+			font-size: 1.6rem;
+			line-height: 1;
+		}
+	}
+}
+.schema {
+	background: #fff url(../img/shema/schema-bg.png) no-repeat bottom right -15rem;
+}
+
+/* Блок все включено */
+.all-inclusive {
+	background: #f5f5f5;
+	&-header {
+		h1 {
+			color: @colors-icon-green;
+		}
+		p {
+			font-size: 1.6rem;
+			margin: 3rem 0 9rem;
+		}
+	}
+	.media {
+		min-height: 15rem;
+		h4 {
+			.bold();
+			font-size: 1.6rem;
+			margin-bottom: 0;
+		}
+		p {
+			font-size: 1.1rem;
+			line-height: 1;
+		}
+	}
+}
+.circle {
+	display: inline-block;
+	background-color: @colors-icon-green;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	&-border {
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  font-size: 2rem;
+  .bold();
+  border: 2px solid @colors-icon-green;
+  color: #fff;
+  padding: 0.3rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2;
+	}
+}
+
 /* Модальные окна */
 .popup {
 	display: none;
@@ -525,6 +594,14 @@ a[href^="#accordion"] + *{display: none;}
 	.form .feedback-form-input {
 		width: 25rem;
 	}
+	.schema {
+		background: url(../img/shema/schema-bg.png) no-repeat bottom right -38rem;
+	}
+	.all-inclusive .media {
+		h4 {
+			font-size: 1.5rem;
+		}
+	}
 }
 
 @media (max-width: 991px) {
@@ -584,6 +661,9 @@ a[href^="#accordion"] + *{display: none;}
  .form .feedback-input-text {
  	transform: translateX(-25%);
  	top: 2%;
+ }
+ .all-inclusive .media h4 {
+ 	font-size: 1.6rem;
  }
 }
 
@@ -659,14 +739,18 @@ a[href^="#accordion"] + *{display: none;}
  	margin-top: 2rem;
  }
  .features {
- 	padding: 4rem 0 2rem 0;
+ 	padding: 0 0 2rem 0;
  	margin-bottom: 0;
  }
  .features-header {
  	margin-top: 1rem;
+ 	h1 {
+ 		margin-bottom: 4rem;
+ 	}
  }
  .section-header {
- 	margin-bottom: 5.5rem;
+ 	margin-top: 4rem;
+ 	margin-bottom: 0;
  	font-size: 2.6rem;
  }
  .features-block {
@@ -748,7 +832,7 @@ a[href^="#accordion"] + *{display: none;}
 		&-slider {
 			padding: 1rem;
 			margin: 0 0 3rem;
-			height: 68rem;
+			max-height: 70rem;
 			&-btn {
 				background-color: #fff;
 			}
@@ -764,40 +848,46 @@ a[href^="#accordion"] + *{display: none;}
 		margin: 1rem 0 1rem 0;
 	}
 .feedback-dots {
-	position: absolute;
-	margin-top: 2rem;
-	left: 50%;
-	transform: translateX(-70%);
+	margin: auto;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ list-style: none;
+ padding: 0;
+ margin-top: 1.5rem;
 		li {
-			list-style: none;
-			display: inline-block;
-			margin: 0 0.5rem;
-		}
-		button {
-			font-size: 0;
 			width: 1rem;
 			height: 1rem;
 			background-color: #c7c9c6;
-			border: none;
-			border-radius: 100%;
+			border-radius: 50%;
+			margin: 0.5rem;
+			&.slick-active {
+				background-color: #358015;
+			}
 		}
-		button:hover {
-			content: '#';
-			background-color: #358015;
+		button {
+		display: none;
 		}
 	}
 .input-name {
-		margin-left: -6rem;
+		margin-left: 0;
 	}
-.form .feedback-input-text {
-	left: 28%;
- }
- .form .feedback-form-input {
- 	margin-left: -2rem;
+	.form .feedback-form-input {
+		display: inline-block;
+  margin-left: -2rem;
+	}
+ .form .feedback-input-text {
+  transform: translateX(-50%);
  }
  .form .feedback-form-text {
  	font-size: 1.6rem;
  	margin: 0 0 1.5rem;
+ }
+ .feedback-text-left {
+ 	margin: 0;
+ }
+ .feedback-text-right {
+ 	margin: 0;
  }
  .feedback-small {
  	display: flex;
@@ -807,4 +897,43 @@ a[href^="#accordion"] + *{display: none;}
  .feedback-form {
  	margin-bottom: 1rem;
  }
+ .schema {
+ 	background: none;
+ 	text-align: center;
+ 	&-header {
+ 		h1 {
+ 		 font-size: 2rem;
+ 		}
+ 	}
+ }
+ .schema .sсhema-block {
+ min-height: 20rem;
+ }
+ .footer-text {
+ 	margin-bottom: 4rem;
+ }
+ .all-inclusive {
+ 	&-header {
+ 		h1 {
+ 			font-size: 2.6rem;
+ 		}
+ 		p {
+ 			font-size: 1.6rem;
+ 			margin: 2rem 0 3rem;
+ 		}
+ 	}
+ 	.media {
+ 		min-height: 8rem;
+ 	}
+ }
+}
+@media (min-width: 650px) and (max-width: 767px) {
+	.feedback-slider {
+		max-height: 85rem;
+	}
+}
+@media (min-width: 500px) and (max-width: 649px) {
+	.feedback-slider {
+		max-height: 80rem;
+	}
 }
