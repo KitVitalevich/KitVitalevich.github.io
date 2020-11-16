@@ -52,3 +52,5 @@
 [Практика](https://kitvitalevich.github.io/practice/src/index.html) - урок 8. сверстаны блоки со схемой и все включено
 
 [Урок 22](https://kitvitalevich.github.io/lesson_22/src/index.html) - карты 
+
+[Практика](https://kitvitalevich.github.io/practice/src/index.html) - урок 9. блок с опасениями 
