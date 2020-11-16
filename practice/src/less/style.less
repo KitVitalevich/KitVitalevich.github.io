@@ -510,6 +510,77 @@ a[href^="#accordion"] + *{display: none;}
 	}
 }
 
+/* Блок без опасений */
+.problems {
+	position: relative;
+	margin-bottom: 10rem;
+	&-list {
+		margin-top: 7rem;
+		border: 4px solid;
+		padding: 5rem 3rem 0 3rem;
+		min-height: 36rem;
+		h3 {
+			.bold();
+			font-size: 2.1rem;
+			margin: 0;
+		}
+		ul {
+			list-style: none;
+			padding: 3rem 0 0 0;
+			margin: 0;
+		}
+		li {
+			position: relative;
+			padding-left: 4rem;
+			line-height: 1;
+			font-size: 1.5rem;
+			margin-bottom: 3rem;
+		}
+		&_bad {
+			border: 4px solid #e8e8e8;
+			h3 {
+				color: #aaaaaa;
+			}
+   li:before {
+				content:'';
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);	
+				width: 3rem;
+				height: 3rem;
+				padding: 0;
+				margin: 0;
+				background: url(../img/problems/bad.png) no-repeat center;
+			}
+		}
+		&_good {
+			border: 4px solid @colors-icon-green;
+   li:before {
+				content:'';
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);	
+				width: 3rem;
+				height: 3rem;
+				padding: 0;
+				margin: 0;
+				background: url(../img/problems/good.png) no-repeat center;
+			}
+		}
+	}
+	&-woman {
+		position: absolute;
+		top: 17rem;
+		left: 50%;
+		transform: translateX(-60%);
+	}
+	&-list_xs {
+		display: none;
+	}
+}
+
 /* Модальные окна */
 .popup {
 	display: none;
@@ -602,6 +673,14 @@ a[href^="#accordion"] + *{display: none;}
 			font-size: 1.5rem;
 		}
 	}
+	.problems {
+		&-list {
+			min-height: 40rem;
+		}
+		&-woman {
+			top: 21rem;
+		}
+	}
 }
 
 @media (max-width: 991px) {
@@ -664,6 +743,14 @@ a[href^="#accordion"] + *{display: none;}
  }
  .all-inclusive .media h4 {
  	font-size: 1.6rem;
+ }
+ .problems {
+ 	&-list {
+ 		min-height: 41rem;
+ 	}
+ 	&-woman {
+ 		display: none;
+ 	}
  }
 }
 
@@ -892,7 +979,7 @@ a[href^="#accordion"] + *{display: none;}
  .feedback-small {
  	display: flex;
  	justify-content: center;
- 	margin-bottom: 10rem;
+ 	margin-bottom: 3rem;
  }
  .feedback-form {
  	margin-bottom: 1rem;
@@ -924,6 +1011,37 @@ a[href^="#accordion"] + *{display: none;}
  	}
  	.media {
  		min-height: 8rem;
+ 	}
+ }
+ .problems {
+ 	&-header h1 {
+ 		font-size: 2.3rem;
+ 	}
+ 	&-list_xs {
+ 		display: inline;
+ 		h3 {
+ 			font-size: 1.7rem;
+ 			.bold();
+ 			text-align: center;
+ 			margin-bottom: 3rem;
+ 		}
+ 		h4 {
+ 			margin: 1.5rem 0 1.5rem 2rem;
+ 			font-size: 1.3rem;
+ 			.bold();
+ 		}
+ 	}
+ 	&-list-text {
+ 		font-size: 1.3rem;
+ 		padding-left: 1rem;
+ 		border: 3px solid @colors-icon-green;
+ 		color: @colors-icon-green;
+ 		h5 {
+ 			.bold();
+ 		}
+ 	}
+ 	&-list {
+ 		display: none;
  	}
  }
 }
