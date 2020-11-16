@@ -535,13 +535,51 @@ textarea {
 }
 .problems-woman {
   position: absolute;
-  top: 17rem;
+  top: 16.5rem;
   left: 50%;
   -webkit-transform: translateX(-60%);
           transform: translateX(-60%);
 }
 .problems-list_xs {
   display: none;
+}
+/* Блок с материалами */
+.materials {
+  background: url(../img/materials/materials-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+.materials a {
+  color: #45b613;
+  border-bottom: 1px solid #45b613;
+}
+.materials a:hover {
+  color: #33880e;
+}
+.materials-header h1 {
+  margin-bottom: 3rem;
+}
+.materials-header p {
+  font-size: 1.9rem;
+  margin-bottom: 6rem;
+}
+.materials-slider {
+  height: 40rem;
+}
+.materials-block h3 {
+  padding: 4rem 0 0 0;
+  font-size: 2.2rem;
+}
+.materials-block p {
+  height: 5.5rem;
+  font-size: 1.9rem;
+}
+.materials-img img {
+  height: 170px;
+}
+.materials-delivery {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 10rem;
 }
 /* Модальные окна */
 .popup {
@@ -631,7 +669,7 @@ textarea {
     min-height: 40rem;
   }
   .problems-woman {
-    top: 21rem;
+    top: 20.5rem;
   }
 }
 @media (max-width: 991px) {
@@ -953,6 +991,9 @@ textarea {
   .all-inclusive .media {
     min-height: 8rem;
   }
+  .problems {
+    margin-bottom: 5rem;
+  }
   .problems-header h1 {
     font-size: 2.3rem;
   }
@@ -981,6 +1022,12 @@ textarea {
   }
   .problems-list {
     display: none;
+  }
+  .materials-slider {
+    height: 38rem;
+  }
+  .materials-delivery {
+    margin-bottom: 5rem;
   }
 }
 @media (min-width: 650px) and (max-width: 767px) {
