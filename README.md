@@ -56,3 +56,5 @@
 [Урок 22](https://kitvitalevich.github.io/lesson_22/src/index.html) - карты 
 
 [Практика](https://kitvitalevich.github.io/practice/src/index.html) - урок 9. блок с опасениями 
+
+[Практика](https://kitvitalevich.github.io/practice/src/index.html) - урок 10. блок с материалами
