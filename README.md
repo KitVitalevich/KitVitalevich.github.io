@@ -49,6 +49,8 @@
 
 [Практика](https://kitvitalevich.github.io/practice/src/index.html) - урок 7. доделан блок с отзывами + его адаптив
 
+[Урок 21](https://kitvitalevich.github.io/parallax-site/index.html) - параллакс и релакс эффекты
+
 [Практика](https://kitvitalevich.github.io/practice/src/index.html) - урок 8. сверстаны блоки со схемой и все включено
 
 [Урок 22](https://kitvitalevich.github.io/lesson_22/src/index.html) - карты 
