@@ -58,3 +58,5 @@
 [Практика](https://kitvitalevich.github.io/practice/src/index.html) - урок 9. блок с опасениями 
 
 [Практика](https://kitvitalevich.github.io/practice/src/index.html) - урок 10. блок с материалами
+
+[Практика](https://kitvitalevich.github.io/practice/src/index.html) - урок 11. блок с приглашением и доп. материалами
