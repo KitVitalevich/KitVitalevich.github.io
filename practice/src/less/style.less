@@ -580,6 +580,7 @@ a[href^="#accordion"] + *{display: none;}
 		display: none;
 	}
 }
+
 /* Блок с материалами */
 .materials {
 	background: url(../img/materials/materials-bg.jpg) no-repeat center;
@@ -622,6 +623,41 @@ a[href^="#accordion"] + *{display: none;}
 		font-size: 1.8rem;
 		text-align: center;
 		margin-bottom: 10rem;
+	}
+}
+/* Блок с приглашением */
+.excursion {
+	background: url(../img/excursion/excursion-bg.jpg) no-repeat top right;
+	background-size: cover;
+	&-form {
+		margin-bottom: 10rem;
+	}
+}
+
+/* Блок с доп. услугами */
+.services {
+	background: #286b0a;
+	color: #fff;
+	text-align: center;
+	&-header {
+		p {
+			margin: 4rem 0 5rem;
+			font-size: 1.9rem;
+		}
+	}
+	&-blocks {
+		margin-bottom: 6.5rem;
+	}
+	&-block {
+		p {
+			font-size: 2rem;
+			margin-top: 2.5rem;
+		}
+	}
+	&-btn {
+		width: 14rem;
+		margin-top: 1.5rem;
+		margin-bottom: 3.5rem;
 	}
 }
 
@@ -725,6 +761,16 @@ a[href^="#accordion"] + *{display: none;}
 			top: 20.5rem;
 		}
 	}
+	.services {
+		&-blocks {
+			padding: 0 1rem;
+		}
+		&-block {
+			img {
+				width: 30rem;
+			}
+		}
+	}
 }
 
 @media (max-width: 991px) {
@@ -795,6 +841,10 @@ a[href^="#accordion"] + *{display: none;}
  	&-woman {
  		display: none;
  	}
+ }
+ .excursion {
+ 	background: url(../img/excursion/excursion-min-bg.jpg);
+ 	background-size: cover;
  }
 }
 
@@ -1095,6 +1145,34 @@ a[href^="#accordion"] + *{display: none;}
  	}
  	&-delivery {
  		margin-bottom: 5rem;
+ 	}
+ }
+ .excursion-form {
+ 	margin-bottom: 4rem;
+ }
+ .services {
+ 	&-header {
+ 		h1 {
+ 			font-size: 2.4rem;
+ 		}
+ 		p {
+ 			font-size: 1.5rem;
+ 			margin: 2rem 0 2rem;
+ 		}
+ 	}
+ 	&-blocks {
+ 		margin-bottom: 1rem;
+ 		p {
+ 			margin-top: 1.5rem;
+ 		}
+ 	}
+ 	&-btn {
+ 		margin-top: 0.5rem;
+ 	}
+ 	&-block {
+ 		img {
+ 			width: 100%;
+ 		}
  	}
  }
 }

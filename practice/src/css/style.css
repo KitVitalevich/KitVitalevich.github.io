@@ -581,6 +581,36 @@ textarea {
   text-align: center;
   margin-bottom: 10rem;
 }
+/* Блок с приглашением */
+.excursion {
+  background: url(../img/excursion/excursion-bg.jpg) no-repeat top right;
+  background-size: cover;
+}
+.excursion-form {
+  margin-bottom: 10rem;
+}
+/* Блок с доп. услугами */
+.services {
+  background: #286b0a;
+  color: #fff;
+  text-align: center;
+}
+.services-header p {
+  margin: 4rem 0 5rem;
+  font-size: 1.9rem;
+}
+.services-blocks {
+  margin-bottom: 6.5rem;
+}
+.services-block p {
+  font-size: 2rem;
+  margin-top: 2.5rem;
+}
+.services-btn {
+  width: 14rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3.5rem;
+}
 /* Модальные окна */
 .popup {
   display: none;
@@ -671,6 +701,12 @@ textarea {
   .problems-woman {
     top: 20.5rem;
   }
+  .services-blocks {
+    padding: 0 1rem;
+  }
+  .services-block img {
+    width: 30rem;
+  }
 }
 @media (max-width: 991px) {
   .main {
@@ -735,6 +771,10 @@ textarea {
   }
   .problems-woman {
     display: none;
+  }
+  .excursion {
+    background: url(../img/excursion/excursion-min-bg.jpg);
+    background-size: cover;
   }
 }
 @media (max-width: 767px) {
@@ -1028,6 +1068,28 @@ textarea {
   }
   .materials-delivery {
     margin-bottom: 5rem;
+  }
+  .excursion-form {
+    margin-bottom: 4rem;
+  }
+  .services-header h1 {
+    font-size: 2.4rem;
+  }
+  .services-header p {
+    font-size: 1.5rem;
+    margin: 2rem 0 2rem;
+  }
+  .services-blocks {
+    margin-bottom: 1rem;
+  }
+  .services-blocks p {
+    margin-top: 1.5rem;
+  }
+  .services-btn {
+    margin-top: 0.5rem;
+  }
+  .services-block img {
+    width: 100%;
   }
 }
 @media (min-width: 650px) and (max-width: 767px) {
