@@ -60,3 +60,5 @@
 [Практика](https://kitvitalevich.github.io/practice/src/index.html) - урок 10. блок с материалами
 
 [Практика](https://kitvitalevich.github.io/practice/src/index.html) - урок 11. блок с приглашением и доп. материалами
+
+[Урок 23](https://kitvitalevich.github.io/lesson_23/index.html) - формы
