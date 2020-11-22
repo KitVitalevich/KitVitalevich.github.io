@@ -661,6 +661,77 @@ a[href^="#accordion"] + *{display: none;}
 	}
 }
 
+/* Блок с контактами */
+.contacts {
+	background: url(../img/contacts/contacts-bg.jpg) no-repeat center;
+	background-size: cover;
+	&-map {
+		margin: 2rem 0 3rem;
+	}
+	&-btn {
+		width: auto;
+		margin-bottom: 1rem;
+	}
+	&-col-left {
+		text-align: left;
+		h3 {
+			margin: 7rem 0 4rem;
+			.bold();
+			font-size: 3.6rem;
+		}
+		p {
+			margin: 2rem 0;
+			font-size: 1.6rem;
+		}
+		a {
+			color: #242424;
+			text-decoration: underline;
+		}
+		a:hover {
+			color: lighten(#242424, 35%);
+		}
+	}
+	&-form {
+		margin-top: 7rem;
+		margin-bottom: 10rem;
+		.contacts-textarea {
+			height: 10rem;
+		}
+	}
+}
+
+/* Footer (подвал сайта) */
+.footer {
+	margin: 3rem 0;
+	&-col-left {
+		text-align: left;
+	}
+	&-col-center {
+		text-align: center;
+		strong {
+			font-size: 2rem;
+		}
+		p {
+			margin-top: 1rem;
+			font-size: 1.7rem;
+			text-decoration: underline;
+		}
+		a {
+			color: #242424;
+		}
+		a:hover {
+			color: lighten(#242424, 35%);
+		}
+	}
+	&-col-right {
+		text-align: right;
+		small {
+			display: block; 
+			font-size: 1.1rem;
+		}
+	}
+}
+
 /* Модальные окна */
 .popup {
 	display: none;
@@ -845,6 +916,14 @@ a[href^="#accordion"] + *{display: none;}
  .excursion {
  	background: url(../img/excursion/excursion-min-bg.jpg);
  	background-size: cover;
+ }
+ .contacts {
+ 	&-col-left {
+ 		text-align: center;
+ 	}
+ 	&-form {
+ 		margin-top: 0;
+ 	}
  }
 }
 
@@ -1173,6 +1252,38 @@ a[href^="#accordion"] + *{display: none;}
  		img {
  			width: 100%;
  		}
+ 	}
+ }
+ .contacts {
+ 	&-col-left {
+ 		h3 {
+ 			margin-top: 4rem;
+ 		}
+ 		p {
+ 			font-size: 1.5rem;
+ 		}
+ 	}
+ 	&-map {
+ 		iframe {
+ 			width: 100%;
+ 		}
+ 	}
+ 	&-form {
+ 		margin-bottom: 5rem;
+ 	}
+ }
+ .footer {
+ 	&-block {
+ 		text-align: center;
+ 	}
+ 	&-col-left {
+ 		text-align: center;
+ 	}
+ 	&-col-center {
+ 		margin: 5rem 0;
+ 	}
+ 	&-col-right {
+ 		text-align: center;
  	}
  }
 }

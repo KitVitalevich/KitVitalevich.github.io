@@ -611,6 +611,75 @@ textarea {
   margin-top: 1.5rem;
   margin-bottom: 3.5rem;
 }
+/* Блок с контактами */
+.contacts {
+  background: url(../img/contacts/contacts-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+.contacts-map {
+  margin: 2rem 0 3rem;
+}
+.contacts-btn {
+  width: auto;
+  margin-bottom: 1rem;
+}
+.contacts-col-left {
+  text-align: left;
+}
+.contacts-col-left h3 {
+  margin: 7rem 0 4rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 3.6rem;
+}
+.contacts-col-left p {
+  margin: 2rem 0;
+  font-size: 1.6rem;
+}
+.contacts-col-left a {
+  color: #242424;
+  text-decoration: underline;
+}
+.contacts-col-left a:hover {
+  color: #7d7d7d;
+}
+.contacts-form {
+  margin-top: 7rem;
+  margin-bottom: 10rem;
+}
+.contacts-form .contacts-textarea {
+  height: 10rem;
+}
+/* Footer (подвал сайта) */
+.footer {
+  margin: 3rem 0;
+}
+.footer-col-left {
+  text-align: left;
+}
+.footer-col-center {
+  text-align: center;
+}
+.footer-col-center strong {
+  font-size: 2rem;
+}
+.footer-col-center p {
+  margin-top: 1rem;
+  font-size: 1.7rem;
+  text-decoration: underline;
+}
+.footer-col-center a {
+  color: #242424;
+}
+.footer-col-center a:hover {
+  color: #7d7d7d;
+}
+.footer-col-right {
+  text-align: right;
+}
+.footer-col-right small {
+  display: block;
+  font-size: 1.1rem;
+}
 /* Модальные окна */
 .popup {
   display: none;
@@ -775,6 +844,12 @@ textarea {
   .excursion {
     background: url(../img/excursion/excursion-min-bg.jpg);
     background-size: cover;
+  }
+  .contacts-col-left {
+    text-align: center;
+  }
+  .contacts-form {
+    margin-top: 0;
   }
 }
 @media (max-width: 767px) {
@@ -1090,6 +1165,30 @@ textarea {
   }
   .services-block img {
     width: 100%;
+  }
+  .contacts-col-left h3 {
+    margin-top: 4rem;
+  }
+  .contacts-col-left p {
+    font-size: 1.5rem;
+  }
+  .contacts-map iframe {
+    width: 100%;
+  }
+  .contacts-form {
+    margin-bottom: 5rem;
+  }
+  .footer-block {
+    text-align: center;
+  }
+  .footer-col-left {
+    text-align: center;
+  }
+  .footer-col-center {
+    margin: 5rem 0;
+  }
+  .footer-col-right {
+    text-align: center;
   }
 }
 @media (min-width: 650px) and (max-width: 767px) {
