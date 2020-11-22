@@ -62,3 +62,5 @@
 [Практика](https://kitvitalevich.github.io/practice/src/index.html) - урок 11. блок с приглашением и доп. материалами
 
 [Урок 23](https://kitvitalevich.github.io/lesson_23/index.html) - формы
+
+[Практика](https://kitvitalevich.github.io/practice/src/index.html) - урок 12. блок с контактами и подвал сайта
