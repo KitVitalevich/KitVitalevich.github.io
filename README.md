@@ -65,4 +65,4 @@
 
 [Практика](https://kitvitalevich.github.io/practice/src/index.html) - урок 12. блок с контактами и подвал сайта
 
-[Одностраничный](KitVitalevich.github.io/one page site/index.html) и [Многостраничный сайты](KitVitalevich.github.io/multipage site/index.php) - многостраничные сайты 
+[Одностраничный](https://kitvitalevich.github.io/one%20page%20site/index.html) и [Многостраничный сайты](https://kitvitalevich.github.io/multipage site/index.php) - многостраничные сайты 
