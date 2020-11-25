@@ -140,10 +140,35 @@ add_action( 'widgets_init', 'lesson_25_din_widgets_init' );
  * Enqueue scripts and styles.
  */
 function lesson_25_din_scripts() {
-	wp_enqueue_style( 'lesson_25-din-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'lesson_25-din-style', 'rtl', 'replace' );
+	/* Подключение главного файла стилей от темы (style.css) ////////////////////////// */
+	wp_enqueue_style( 'lesson_25-din-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'lesson_25-din-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	/* Подключение bootstrap 3 */
+	wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/vendor/bootstrap/css/bootstrap.min.css' );	
+
+	/* Подключение Font Awesome */
+	wp_enqueue_style( 'fontawesome-style', get_template_directory_uri() . '/vendor/font-awesome/css/font-awesome.min.css' );
+
+	/* Подключение нашего файла стилей */
+	wp_enqueue_style( 'custom-style', get_template_directory_uri() . '/css/freelancer.min.css' );
+
+/* Подключение скриптов //////////////////////////////////////////////////////////// */
+	wp_enqueue_script( 'lesson_25-din-navigation', get_template_directory_uri() . '/js/navigation.js', array(), true );
+
+/* Подключение bootstrap-js */
+	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/vendor/bootstrap/js/bootstrap.min.js', array('jquery'), null, true );
+
+	/* Подключение easing-js */
+	wp_enqueue_script( 'easing-js', get_template_directory_uri() . '/vendor/jquery-easing/jquery.easing.min.js', array('jquery'), null, true );
+
+	/* Подключение validation-js */
+	wp_enqueue_script( 'validation-js', get_template_directory_uri() . '/js/jqBootstrapValidation.js', array('jquery'), null, true );
+
+	/* Подключение contact-js */
+	wp_enqueue_script( 'contact-js', get_template_directory_uri() . '/js/contact_me.js', array('jquery'), null, true );
+
+	/* Подключение freelancer-js */
+	wp_enqueue_script( 'freelancer-js', get_template_directory_uri() . '/js/freelancer.min.js', array('jquery'), null, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

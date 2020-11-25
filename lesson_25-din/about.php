@@ -10,7 +10,15 @@ Template Name: Обо мне
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
-          <img class="img-fluid" src="<?php bloginfo('template_url');?>/img/profile.png" alt="">
+          <?php 
+
+        $image = get_field('avatar');
+
+        if(!empty($image)): ?>
+
+        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+        <?php endif; ?>
           <span class="name"><?php bloginfo('title'); ?></span>
           <hr class="star-light">
           <span class="skills"><?php bloginfo('description'); ?></span>

@@ -9,7 +9,7 @@ Template Name: Главная страница
     <!-- Header -->
     <header class="masthead">
       <div class="container">
-        <img class="img-fluid" src="<?php bloginfo('template_url');?>/img/profile.png" alt="">
+        <?php the_field('avatar', 2) ?>
         <div class="intro-text">
           <span class="name"><?php bloginfo('title'); ?></span>
           <hr class="star-light">

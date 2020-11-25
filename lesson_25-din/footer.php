@@ -12,17 +12,17 @@
               <h3>Around the Web</h3>
               <ul class="list-inline">
                 <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="#">
+                  <a class="btn-social btn-outline" href="<?php the_field('fb_link', 2) ?>">
                     <i class="fa fa-fw fa-facebook"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="#">
+                  <a class="btn-social btn-outline" href="<?php the_field('google_plus', 2) ?>">
                     <i class="fa fa-fw fa-google-plus"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="#">
+                  <a class="btn-social btn-outline" href="<?php the_field('twitter_link', 2) ?>">
                     <i class="fa fa-fw fa-twitter"></i>
                   </a>
                 </li>
@@ -64,20 +64,7 @@
       </a>
     </div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="<?php bloginfo('template_url');?>/vendor/jquery/jquery.min.js"></script>
-    <script src="<?php bloginfo('template_url');?>/vendor/popper/popper.min.js"></script>
-    <script src="<?php bloginfo('template_url');?>/vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="<?php bloginfo('template_url');?>/vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="<?php bloginfo('template_url');?>/js/jqBootstrapValidation.js"></script>
-    <script src="<?php bloginfo('template_url');?>/js/contact_me.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="<?php bloginfo('template_url');?>/js/freelancer.min.js"></script>
+    <?php wp_footer(); ?>
 
   </body>
 
