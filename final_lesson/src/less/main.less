@@ -1,0 +1,89 @@
+/* Главный экран  */
+.main {
+	background: url(../img/main/main-bg.jpg) center no-repeat;
+	background-size: cover;
+	color: #fff;
+	}
+/* Информационное меню */
+	.main-header {
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 0 10px;
+  &_title {
+  	.medium();
+  	margin-left: 15px;
+  	font-size: 20px;
+  }
+  &_phone {
+  	a {
+  		display: block;
+  		text-align: right;
+  		text-decoration: none;
+  	}
+  }
+	}
+	.header-phone {
+		.bold();
+		font-size: 20px;
+		color: #fff;
+		&:hover {
+			color: darken(#fff, 20%);
+	}
+		}
+	.header-call {
+		.medium();
+		font-size: 15px;
+  color: @colors_btn;	
+  &:hover {
+  	color: darken(@colors_btn, 10%);
+  }
+}
+/* Контент меню */
+.main-content {
+	&_title {
+		&-info {
+			h1 {
+				margin-top: 80px;
+				.bold();
+				font-size: 30px;
+			}
+			p {
+				.bold();
+				font-size: 23px;
+			}
+			button {
+				display: block;
+				.medium();
+				font-size: 14px;
+				text-transform: uppercase;
+				text-shadow: 0px 1px 2px rgba(87, 143, 34, 0.004);
+				background-color: @colors_btn;
+				border: none;
+				border-radius: 3px;
+				padding: 15px 35px;
+				margin: 20px 0 40px;
+			}
+			img {
+				width: 300px;
+				margin-bottom: 30px;
+			}
+		}
+		&-rex {
+			img {
+				width: 400px;
+				margin-top: 34%;
+			}
+		}
+	}
+}
+
+.Прямоугольник_14 {
+  background-color: rgb(0, 0, 0);
+  opacity: 0.62;
+  position: absolute;
+  left: 0px;
+  top: -1px;
+  width: 1926px;
+  height: 87px;
+  z-index: 475;
+}
