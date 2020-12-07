@@ -1,0 +1,30 @@
+/* Блок с работой */
+.works {
+	background-color: @colors-fon_beige;
+background: linear-gradient(3deg, transparent 100px, @colors-fon_beige 0);
+	&-block {
+		text-align: center;
+		margin: 90px 0 110px;
+		&_title {
+			h2 {
+				.black();
+				font-size: 35px;
+			}
+			span {
+				border-top: 5px solid @colors_arrow;
+				padding: 0 25px 0;
+			}
+		}
+		&_img {
+			line-height: 200px;
+			img {
+				vertical-align: bottom;
+			}
+		}
+		p {
+			.roman();
+			font-size: 17px;
+			margin-top: 20px;
+		}
+	}
+}

@@ -31,6 +31,13 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'Qanelas_medium';
+  src: url('../fonts/Qanelas-Medium.eot');
+  src: local('../fonts/Qanelas Medium'), local('Qanelas-Medium'), url('../fonts/Qanelas-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Qanelas-Medium.woff2') format('woff2'), url('../fonts/Qanelas-Medium.woff') format('woff'), url('../fonts/Qanelas-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
 /* Цвета */
 * {
   -webkit-box-sizing: border-box;
@@ -39,12 +46,33 @@
 body {
   margin: 0;
   padding: 0;
+  color: #000;
 }
 button,
 input,
 a,
 textarea {
-  outline: ;
+  outline: none;
+}
+a:hover {
+  text-decoration: none;
+  outline: none;
+}
+/* Настройки элементов */
+.button {
+  display: block;
+  font-family: 'HelveticaNeueCyr_medium', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-shadow: 0px 1px 2px rgba(87, 143, 34, 0.004);
+  background-color: #95c62c;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 15px 35px;
+}
+.button:hover {
+  background-color: #769c23;
 }
 /* Главный экран  */
 .main {
@@ -67,6 +95,9 @@ textarea {
   display: block;
   text-align: right;
   text-decoration: none;
+}
+.main-header_btn {
+  margin: 10px 0 35px;
 }
 .header-phone {
   font-family: 'HelveticaNeueCyr_bold', sans-serif;
@@ -94,33 +125,448 @@ textarea {
   font-family: 'HelveticaNeueCyr_bold', sans-serif;
   font-size: 23px;
 }
-.main-content_title-info button {
-  display: block;
-  font-family: 'HelveticaNeueCyr_medium', sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-  text-shadow: 0px 1px 2px rgba(87, 143, 34, 0.004);
-  background-color: #95c62c;
-  border: none;
-  border-radius: 3px;
-  padding: 15px 35px;
-  margin: 20px 0 40px;
-}
 .main-content_title-info img {
   width: 300px;
   margin-bottom: 30px;
 }
 .main-content_title-rex img {
   width: 400px;
-  margin-top: 34%;
+  margin-top: 30%;
 }
-.Прямоугольник_14 {
-  background-color: #000000;
-  opacity: 0.62;
+/* Блок с комплектаций */
+.equipment {
+  background-color: #f8f8f0;
+  color: #000;
+}
+.equipment-title h2 {
+  font-family: 'HelveticaNeueCyr_black', sans-serif;
+  font-size: 35px;
+  margin-top: 100px;
+}
+.equipment-title h2 span {
+  font-size: 26px;
+}
+.equipment-title p {
+  max-width: 600px;
+  margin-bottom: 25px;
+  font-family: 'HelveticaNeueCyr_roman', sans-serif;
+  font-size: 17px;
+  margin-top: 35px;
+}
+.equipment-blocks {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 30px;
+}
+.equipment-blocks p {
+  font-family: 'HelveticaNeueCyr_medium', sans-serif;
+  font-size: 20px;
+}
+.equipment-blocks p span {
+  display: inline-block;
+  font-family: 'HelveticaNeueCyr_medium', sans-serif;
+  font-size: 25px;
+  color: #b61919;
+}
+.equipment-blocks span {
+  display: block;
+  font-family: 'HelveticaNeueCyr_roman', sans-serif;
+  font-size: 17px;
+}
+.equipment-blocks strong {
+  font-family: 'HelveticaNeueCyr_roman', sans-serif;
+  font-size: 17px;
+}
+.equipment-blocks_price {
+  display: inline-block;
+}
+.equipment-blocks .equipment-blocks_indent {
+  margin-top: 25px;
+}
+.equipment-btn {
+  border-bottom: 4px solid #76ae0c;
+  margin: 20px 0 50px;
+}
+.equipment-box {
+  position: relative;
+}
+.equipment-box img {
   position: absolute;
-  left: 0px;
-  top: -1px;
-  width: 1926px;
-  height: 87px;
-  z-index: 475;
+  margin-top: 100px;
+  left: -60px;
+}
+.equipment-box p {
+  position: absolute;
+  font-family: 'Qanelas_medium', sans-serif;
+  font-size: 25px;
+  margin-top: 93%;
+  margin-left: 50%;
+}
+.equipment-box span {
+  font-family: 'HelveticaNeueCyr_roman', sans-serif;
+  position: absolute;
+  font-size: 17px;
+  max-width: 200px;
+  margin-top: 100%;
+  margin-left: 45%;
+  line-height: 1.2;
+  text-align: right;
+}
+/* Блок с возможностями */
+.opportunities {
+  background-color: #fcfcf6;
+  color: #000;
+}
+.opportunities-block {
+  margin: 90px 60px;
+  /* Про фильмы */
+  /* Про путешествия */
+}
+.opportunities-block_films img {
+  display: block;
+  margin: auto;
+}
+.opportunities-block_films-info {
+  margin: 90px 0 0 60px;
+}
+.opportunities-block_films-info li {
+  font-family: 'HelveticaNeueCyr_medium', sans-serif;
+  position: relative;
+  padding-left: 55px;
+  list-style: none;
+  font-size: 22px;
+}
+.opportunities-block_films-info li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 43px;
+  height: 43px;
+  margin: 0;
+  padding: 0;
+  background: url(../img/opportunities/travel-2.png) no-repeat center;
+}
+.opportunities-block_films-info p {
+  font-family: 'HelveticaNeueCyr_roman', sans-serif;
+  margin: 15px 0 0 55px;
+  font-size: 17px;
+  max-width: 360px;
+}
+.opportunities-block_travel {
+  position: relative;
+}
+.opportunities-block_travel-info {
+  margin-top: 60px;
+}
+.opportunities-block_travel-info li {
+  font-family: 'HelveticaNeueCyr_medium', sans-serif;
+  position: relative;
+  padding-left: 55px;
+  max-width: 380px;
+  list-style: none;
+  font-size: 22px;
+}
+.opportunities-block_travel-info li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 43px;
+  height: 43px;
+  margin: 0;
+  padding: 0;
+  background: url(../img/opportunities/films-2.png) no-repeat center;
+}
+.opportunities-block_travel-info p {
+  font-family: 'HelveticaNeueCyr_roman', sans-serif;
+  margin: 15px 0 0 55px;
+  font-size: 17px;
+  max-width: 380px;
+}
+.opportunities-block_travel-cube {
+  position: absolute;
+  right: 0;
+  top: 25%;
+}
+.opportunities-block_travel-img {
+  margin: 100px 0 0 0px;
+}
+/* Блок заказать */
+.delivery {
+  background: url(../img/delivery/delivery-bg.jpg) no-repeat center;
+  background-size: cover;
+  color: #fff;
+}
+.delivery-block {
+  margin: 40px 0;
+  /* Информация */
+  /* Форма */
+}
+.delivery-block_title h2 {
+  font-family: 'HelveticaNeueCyr_black', sans-serif;
+  font-size: 35px;
+}
+.delivery-block_title-arrow {
+  font-family: 'HelveticaNeueCyr_medium', sans-serif;
+  font-size: 18px;
+  position: relative;
+  background-color: #18a7d0;
+  padding: 5px 10px 5px 15px;
+  margin: 20px 0 35px;
+  max-width: 480px;
+}
+.delivery-block_title-arrow::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  margin-top: ;
+  top: 0;
+  border-left: 30px solid #18a7d0;
+  left: auto;
+  right: -30px;
+}
+.delivery-block_title li {
+  font-family: 'HelveticaNeueCyr_medium', sans-serif;
+  font-size: 18px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 45px;
+  margin-right: 20px;
+  max-width: 237px;
+  list-style: none;
+}
+.delivery-block_title-watch::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0%;
+  padding: 0;
+  margin: 0;
+  width: 37px;
+  height: 37px;
+  background: url(../img/delivery/watch.png) no-repeat center;
+}
+.delivery-block_title-bag::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0%;
+  padding: 0;
+  margin: 0;
+  width: 37px;
+  height: 37px;
+  background: url(../img/delivery/bag.png) no-repeat center;
+}
+.delivery-block .form {
+  display: block;
+  background: #000;
+  text-align: center;
+  border: 4px solid #18a7d0;
+  border-radius: 4px;
+  padding: 25px 55px;
+}
+.delivery-block .form h3 {
+  font-family: 'HelveticaNeueCyr_medium', sans-serif;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+.delivery-block .form input {
+  background: #000;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 15px 30px;
+}
+.delivery-block .form input::-webkit-input-placeholder {
+  font-family: 'HelveticaNeueCyr_roman', sans-serif;
+  font-size: 18px;
+  color: #fff;
+}
+.delivery-block .form input:-ms-input-placeholder {
+  font-family: 'HelveticaNeueCyr_roman', sans-serif;
+  font-size: 18px;
+  color: #fff;
+}
+.delivery-block .form input::-ms-input-placeholder {
+  font-family: 'HelveticaNeueCyr_roman', sans-serif;
+  font-size: 18px;
+  color: #fff;
+}
+.delivery-block .form input::placeholder {
+  font-family: 'HelveticaNeueCyr_roman', sans-serif;
+  font-size: 18px;
+  color: #fff;
+}
+.delivery-block .form-btn {
+  font-family: 'HelveticaNeueCyr_bold', sans-serif;
+  font-size: 16px;
+  display: block;
+  margin: 0 auto 10px;
+}
+.delivery-block .form small {
+  font-family: 'HelveticaNeueCyr_roman', sans-serif;
+  font-size: 15px;
+  margin-top: 10px;
+}
+/* Блок с возможностями */
+.opportunitiesTwo {
+  background-color: #fcfcf6;
+  color: #000;
+}
+.opportunitiesTwo-block {
+  margin: 60px 60px;
+  /* Про спорт */
+  /* Про игры */
+}
+.opportunitiesTwo-block_sport img {
+  display: block;
+  margin: auto;
+}
+.opportunitiesTwo-block_sport-info {
+  margin: 110px 0 0 60px;
+}
+.opportunitiesTwo-block_sport-info li {
+  font-family: 'HelveticaNeueCyr_medium', sans-serif;
+  position: relative;
+  padding-left: 55px;
+  list-style: none;
+  line-height: 1.2;
+  font-size: 22px;
+}
+.opportunitiesTwo-block_sport-info li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 43px;
+  height: 43px;
+  margin: 0;
+  padding: 0;
+  background: url(../img/games/gamepad.png) no-repeat center;
+}
+.opportunitiesTwo-block_sport-info p {
+  font-family: 'HelveticaNeueCyr_roman', sans-serif;
+  margin: 15px 0 0 55px;
+  font-size: 17px;
+  max-width: 360px;
+}
+.opportunitiesTwo-block_game {
+  position: relative;
+}
+.opportunitiesTwo-block_game-info {
+  margin-top: 60px;
+}
+.opportunitiesTwo-block_game-info li {
+  font-family: 'HelveticaNeueCyr_medium', sans-serif;
+  position: relative;
+  padding-left: 55px;
+  max-width: 380px;
+  list-style: none;
+  line-height: 1.2;
+  font-size: 22px;
+}
+.opportunitiesTwo-block_game-info li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 43px;
+  height: 43px;
+  margin: 0;
+  padding: 0;
+  background: url(../img/games/ball.png) no-repeat center;
+}
+.opportunitiesTwo-block_game-info p {
+  font-family: 'HelveticaNeueCyr_roman', sans-serif;
+  margin: 15px 0 0 55px;
+  font-size: 17px;
+  max-width: 380px;
+}
+.opportunitiesTwo-block_game img {
+  margin: 100px 0 0 60px;
+}
+/* Блок с работой */
+.works {
+  background-color: #f8f8f0;
+  background: linear-gradient(3deg, transparent 100px, #f8f8f0 0);
+}
+.works-block {
+  text-align: center;
+  margin: 90px 0 110px;
+}
+.works-block_title h2 {
+  font-family: 'HelveticaNeueCyr_black', sans-serif;
+  font-size: 35px;
+}
+.works-block_title span {
+  border-top: 5px solid #18a7d0;
+  padding: 0 25px 0;
+}
+.works-block_img {
+  line-height: 200px;
+}
+.works-block_img img {
+  vertical-align: bottom;
+}
+.works-block p {
+  font-family: 'HelveticaNeueCyr_roman', sans-serif;
+  font-size: 17px;
+  margin-top: 20px;
+}
+/* Блок с совместимостью */
+.interoperability {
+  position: relative;
+}
+.interoperability-block {
+  margin-bottom: 70px;
+}
+.interoperability-block_title h2 {
+  font-family: 'HelveticaNeueCyr_black', sans-serif;
+  font-size: 35px;
+  margin-bottom: 70px;
+}
+.interoperability-block_phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.interoperability-block_phone p {
+  font-family: 'HelveticaNeueCyr_medium', sans-serif;
+  font-size: 22px;
+}
+.interoperability-block_phone-iphone {
+  text-align: center;
+}
+.interoperability-block_phone-htc {
+  text-align: center;
+  margin-left: 30px;
+}
+.interoperability-block_phone-win {
+  text-align: center;
+  margin-left: 30px;
+}
+.interoperability-block_box img {
+  width: 510px;
+}
+.interoperability-block_box p {
+  font-family: 'HelveticaNeueCyr_medium', sans-serif;
+  font-size: 22px;
+  line-height: 1.2;
+}
+.interoperability-cube {
+  position: absolute;
+  top: -120px;
+  right: 0px;
 }

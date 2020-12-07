@@ -50,6 +50,18 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Qanelas_medium';
+    src: url('../fonts/Qanelas-Medium.eot');
+    src: local('../fonts/Qanelas Medium'), local('Qanelas-Medium'),
+        url('../fonts/Qanelas-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Qanelas-Medium.woff2') format('woff2'),
+        url('../fonts/Qanelas-Medium.woff') format('woff'),
+        url('../fonts/Qanelas-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
 .black() {
     font-family: 'HelveticaNeueCyr_black', sans-serif;
 }
@@ -61,6 +73,9 @@
 }
 .medium() {
     font-family: 'HelveticaNeueCyr_medium', sans-serif;
+}
+.mediumq() {
+    font-family: 'Qanelas_medium', sans-serif;
 }
 
 /* Цвета */
@@ -77,7 +92,30 @@
 body {
     margin: 0;
     padding: 0;
+    color: #000;
 }
 button, input, a, textarea {
-    outline: ;
+    outline: none;
+}
+a:hover {
+  text-decoration: none;
+  outline: none;
+}
+
+/* Настройки элементов */
+
+.button {
+    display: block;
+    .medium();
+    font-size: 14px;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 2px rgba(87, 143, 34, 0.004);
+    background-color: @colors_btn;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 35px;
+}
+.button:hover {
+    background-color: darken(@colors_btn, 10%);
 }
