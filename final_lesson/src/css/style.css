@@ -230,14 +230,15 @@ a:hover {
 .opportunities-block_films-info {
   margin: 90px 0 0 60px;
 }
-.opportunities-block_films-info li {
+.opportunities-block_films-info span {
   font-family: 'HelveticaNeueCyr_medium', sans-serif;
+  display: block;
   position: relative;
   padding-left: 55px;
   list-style: none;
-  font-size: 22px;
+  font-size: 21px;
 }
-.opportunities-block_films-info li::before {
+.opportunities-block_films-info span::before {
   content: '';
   position: absolute;
   left: 0;
@@ -262,15 +263,15 @@ a:hover {
 .opportunities-block_travel-info {
   margin-top: 60px;
 }
-.opportunities-block_travel-info li {
+.opportunities-block_travel-info span {
   font-family: 'HelveticaNeueCyr_medium', sans-serif;
+  display: block;
   position: relative;
   padding-left: 55px;
-  max-width: 380px;
   list-style: none;
-  font-size: 22px;
+  font-size: 21px;
 }
-.opportunities-block_travel-info li::before {
+.opportunities-block_travel-info span::before {
   content: '';
   position: absolute;
   left: 0;
@@ -442,15 +443,16 @@ a:hover {
 .opportunitiesTwo-block_sport-info {
   margin: 110px 0 0 60px;
 }
-.opportunitiesTwo-block_sport-info li {
+.opportunitiesTwo-block_sport-info span {
   font-family: 'HelveticaNeueCyr_medium', sans-serif;
+  display: block;
   position: relative;
   padding-left: 55px;
   list-style: none;
   line-height: 1.2;
-  font-size: 22px;
+  font-size: 21px;
 }
-.opportunitiesTwo-block_sport-info li::before {
+.opportunitiesTwo-block_sport-info span::before {
   content: '';
   position: absolute;
   left: 0;
@@ -475,16 +477,17 @@ a:hover {
 .opportunitiesTwo-block_game-info {
   margin-top: 60px;
 }
-.opportunitiesTwo-block_game-info li {
+.opportunitiesTwo-block_game-info span {
   font-family: 'HelveticaNeueCyr_medium', sans-serif;
+  display: block;
   position: relative;
   padding-left: 55px;
   max-width: 380px;
   list-style: none;
   line-height: 1.2;
-  font-size: 22px;
+  font-size: 21px;
 }
-.opportunitiesTwo-block_game-info li::before {
+.opportunitiesTwo-block_game-info span::before {
   content: '';
   position: absolute;
   left: 0;
