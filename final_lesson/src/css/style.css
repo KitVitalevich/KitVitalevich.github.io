@@ -885,6 +885,7 @@ a:hover {
           transform: translateX(-50%);
   width: 60%;
   height: 60%;
+  border: none;
 }
 .popup-video_close {
   position: absolute;
