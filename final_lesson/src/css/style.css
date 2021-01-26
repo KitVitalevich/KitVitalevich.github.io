@@ -336,12 +336,13 @@ a:hover {
   left: auto;
   right: -30px;
 }
-.delivery-block_title li {
+.delivery-block_title span {
   font-family: 'HelveticaNeueCyr_medium', sans-serif;
   font-size: 18px;
   position: relative;
   display: inline-block;
   vertical-align: top;
+  margin-top: 10px;
   padding-left: 45px;
   margin-right: 20px;
   max-width: 237px;
@@ -689,6 +690,7 @@ a:hover {
 /* Блок с отзывами */
 .feedback {
   background: #f8f8f0;
+  overflow: hidden;
 }
 .feedback-block {
   margin: 90px 0;
