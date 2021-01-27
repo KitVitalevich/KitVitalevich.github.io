@@ -89,16 +89,3 @@
         }
     })  
   });
-
-/* Скрипт загрузки видео при докрутке до него */
-$(document).ready(function() {
-  var interoperability = $('.interoperability');
-  var interoperabilityTop = interoperability.offset().top;
-  $(window).bind('scroll', function () {
-    var windowTop = $(this).scrollTop();
-    if (windowTop > interoperabilityTop) {
-      $('#popup-video_content').html('<iframe width="760" height="430" src="https://www.youtube.com/embed/xc2TsRwqjds?start=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
-      $(window).unbind('scroll')
-    }
-  });
-});
