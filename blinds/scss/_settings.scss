@@ -1,0 +1,124 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+  border: 0;
+  transition: all 0.3s;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+  font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+//Подключение шрифтов
+@font-face {
+  font-family: 'PFDinTextCondPro';
+  src: url('/fonts/PFDinTextCondPro-Medium.eot');
+  src: url('/fonts/PFDinTextCondPro-Medium.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/PFDinTextCondPro-Medium.woff2') format('woff2'),
+      url('/fonts/PFDinTextCondPro-Medium.woff') format('woff'),
+      url('/fonts/PFDinTextCondPro-Medium.ttf') format('truetype'),
+      url('/fonts/PFDinTextCondPro-Medium.svg#PFDinTextCondPro-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PFDinTextCondPro';
+  src: url('/fonts/PFDinTextCondPro-Bold.eot');
+  src: url('/fonts/PFDinTextCondPro-Bold.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/PFDinTextCondPro-Bold.woff2') format('woff2'),
+      url('/fonts/PFDinTextCondPro-Bold.woff') format('woff'),
+      url('/fonts/PFDinTextCondPro-Bold.ttf') format('truetype'),
+      url('/fonts/PFDinTextCondPro-Bold.svg#PFDinTextCondPro-Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PFDinTextCondPro';
+  src: url('/fonts/PFDinTextCondPro-Light.eot');
+  src: url('/fonts/PFDinTextCondPro-Light.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/PFDinTextCondPro-Light.woff2') format('woff2'),
+      url('/fonts/PFDinTextCondPro-Light.woff') format('woff'),
+      url('/fonts/PFDinTextCondPro-Light.ttf') format('truetype'),
+      url('/fonts/PFDinTextCondPro-Light.svg#PFDinTextCondPro-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+$light: 300;
+$medium: 500;
+$bold: 700;
+
+* {
+  font-family: 'PFDinTextCondPro';
+  font-weight: 300;
+  color: #666666;
+}
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+//Цвета
+$color-light: #ffffff;
+$color-header: #fafdfa;
+$color-green: #67cc67;
+$color-btn: #ff9933;
+$color-footer: #666666;
+$color-grey: #cccccc;
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+//Элементы
+.btn {
+  font-size: 20px;
+  font-weight: $bold;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: .5px;
+  border: 2px solid $color-btn;
+  border-radius: 0;
+  color: $color-btn;
+  padding: 16px 33px;
+  outline: none;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  &:hover {
+    background-color: $color-btn;
+    color: $color-light;
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+}
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//

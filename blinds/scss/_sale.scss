@@ -1,0 +1,71 @@
+//Блок с акцией
+.sale {
+  margin: 80px 0px 80px 0px;
+  &-block {
+    display: flex;
+    justify-content: space-around;
+    &__delivery {
+      width: 100%;
+      p {
+        font-weight: $bold;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: $color-btn;
+      }
+      h3 {
+        font-weight: $bold;
+        font-size: 30px;
+        text-transform: uppercase;  
+        color: $color-btn;
+        margin-top: 50px;
+      }
+      span {
+        font-size: 22px;
+        line-height: 2.5;
+      }
+      &-btn {
+        display: flex;
+        .input {
+          display: flex;
+          border: 1px solid #ccc;
+          align-items: center;
+          margin-right: 30px;
+          opacity: 0.4;
+          width: 100%;
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+        .sale-name::before {
+          content: '';
+          background: url(../img/man.svg) 0 0 no-repeat;
+          display: block;
+          width: 13px;
+          height: 13px;
+          padding: 0px 0px 0px 0px;
+          margin: 0px 0px 0px 20px;
+        }
+        .sale-phone::before {
+          content: '';
+          background: url(../img/phone.svg) 0 0 no-repeat;
+          display: inline-block;
+          width: 13px;
+          height: 13px;
+          padding: 0px 0px 0px 0px;
+          margin: 0px 0px 0px 20px;
+        }
+        input {
+          padding: 13px;
+          font-size: 20px;
+          width: 100%;
+          &::placeholder {
+            font-size: 20px;
+          }
+        }
+        .sale-btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

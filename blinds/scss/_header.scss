@@ -1,0 +1,50 @@
+//Главный экран
+.header {
+  background: url(../img/header/header-bg.jpg) no-repeat center / cover;
+}
+.title-list {
+  text-align: left;
+
+  &__title {
+    display: block;
+    h1 {
+      display: inline-block;
+      font-size: 35px;
+      font-weight: $bold;
+      line-height: 1.5;
+      color: $color-light;
+      font-stretch: semi-expanded;
+      margin: 115px 0px 100px 0px;
+      text-transform: uppercase;
+      span {
+        background-color: $color-green;
+        display: inline-block;
+        margin: 5px;
+        letter-spacing: 1px;
+        padding: 0px 10px 0px 10px;
+        font-weight: $bold;
+        color: $color-light;
+      }
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 16px;
+    h3 {
+      font-size: 20px;
+      font-weight: $bold;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      margin: 0;
+      span {
+        font-weight: $bold;
+        color: $color-btn;
+      }
+    }
+  }
+  &__button {
+    .header-btn {
+      margin-bottom: 110px;
+    }
+  }
+}
