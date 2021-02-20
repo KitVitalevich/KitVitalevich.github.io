@@ -48,3 +48,18 @@
     }
   }
 }
+.scrollup {
+  background: url(../img/icon_top.png) 0 0 / 100% no-repeat;
+  width: 40px;
+  height: 40px;
+  opacity: 0.4;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  text-indent: -9999px;
+  display: none;
+  z-index: 98;
+  &:hover {
+    opacity: 0.8;
+  }
+  }

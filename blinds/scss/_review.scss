@@ -1,8 +1,8 @@
 //Отзывы
 .review {
+  display: flex;
   background-color: #fcfcfc;
   text-align: center;
-  margin: 0px 0px 50px 0px;
   &-title {
     display: inline-block;
     margin: 75px 0px 75px 0px;
@@ -16,6 +16,7 @@
   &-slider {
     display: flex;
     flex-direction: column;
+    margin: 0px 0px 50px 0px;
   }
   &-bigslider {
     background-color: #f8f8f8;
