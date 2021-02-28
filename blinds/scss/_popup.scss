@@ -1,0 +1,240 @@
+//Модальные окна
+.popup {
+  width: 100%;
+}
+//Вызов замерщика
+.popup-call {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	&__content {
+		position: fixed;
+		top: 20%;
+		left: 50%;
+		transform: translateX(-50%); 
+		form {
+			display: block;
+			background: $color-light;
+			text-align: center;
+			padding: 25px 55px;
+			max-width: 390px;
+			h3 {
+				font-size: 25px;
+        text-transform: uppercase;
+        line-height: 1.1;
+        padding: 0;
+        margin: 0px 0px 35px 0px;
+			}
+			input {
+        display: block;
+				background: $color-light;
+				border: 2px solid $color-grey;
+        width: 100%;
+        font-size: 20px;
+        padding: 15px 0px 15px 15px;
+        margin: 0px 0px 15px 0px;
+        &::placeholder {
+          font-size: 20px;
+        }
+			}
+      .call-btn {
+        width: 100%;
+      }
+		}
+	}
+	&__close {
+		position: absolute;
+		top: -3rem;
+		right: -2.5rem;
+		width: 2rem;
+		font-size: 3rem;
+		text-align: center;
+		color: #fff;
+		background-color: transparent;
+		border: none;
+		opacity: 0.6;
+		outline: none;
+		padding: 0;
+		&:hover {
+			opacity: 0.9;
+		}
+	}
+}
+//Виды жалюзей
+.popup-details {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 50;
+	padding: 15px;
+	&__content {
+		position: fixed;
+		top: 10%;
+	}
+}
+.details {
+	display: block;
+	max-width: 100%;
+}
+.details-block {
+	background-color: #f8f8f8;
+	padding: 40px;
+	margin-right: 35px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	max-width: 960px;
+	max-height: 100%;
+}
+.details-blocks__description {
+	display: flex;
+	min-width: 0;
+}
+.block-info {
+	display: flex;
+	z-index: 10;
+	min-width: 0;
+}
+.block-info__slider {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding: 0px;
+	max-width: 340px;
+	min-width: 0;
+	h3 {
+		font-size: 25px;
+		font-weight: $medium;
+		text-transform: uppercase;
+		padding: 0;
+		margin: 0px 0px 35px 0px;
+	}
+}
+.info-slider {
+	position: relative;
+	width: 100%;
+}
+.details-info__img {
+	position: relative;
+	img {
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.block-media {
+	position: relative;
+	display: block;
+	margin: 63px 0px 0px 40px;
+}
+.block-media__text {
+	p {
+		font-size: 18px;
+		padding: 0;
+		margin: 0px 0px 20px 0px;
+	}
+	:last-child {
+		margin: 0px 0px 0px 0px;
+	}
+}
+
+.block-media__price {
+  position: absolute;
+	bottom: -3px;
+	span {
+		color: $color-btn;
+	}
+}
+.text {
+	font-size: 20px;
+}
+.text-big {
+	font-size: 30px;
+	font-weight: $bold;
+}
+.text-bold {
+	font-size: 20px;
+	font-weight: $bold;
+}
+
+.details-blocks__form {
+	margin: 80px 0px 0px 0px;
+	form {
+		display: flex;
+		justify-content: space-between;
+		min-width: 0;
+		input {
+			border: 2px solid $color-grey;
+			font-size: 20px;
+			background-color: #f8f8f8;
+			padding: 0px 0px 0px 20px;
+			margin: 0px 20px 0px 0px;
+			width: 100%;
+			&::placeholder {
+				font-size: 20px;
+			}
+		}
+	}
+}
+.details-btn {
+	width: 100%;
+}
+.popup-details .swiper-pagination {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -35px;
+	margin: 0px;
+}
+.popup-details .swiper-pagination-bullet {
+  width: 18px;
+	height: 18px;
+	margin: 0px 5px;
+}
+.popup-details .swiper-pagination-bullet-active {
+	background-color: $color-btn;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+	font-size: 25px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+	top: 60%;
+	color: #fff;
+}
+.popup-details__close {
+	position: absolute;
+	top: -0.3rem;
+	right: 0.4rem;
+	width: 2rem;
+	font-size: 3rem;
+	text-align: center;
+	color: $color-btn;
+	background-color: transparent;
+	border: none;
+	opacity: 0.6;
+	outline: none;
+	padding: 0;
+	z-index: 111;
+	&:hover {
+		opacity: 0.9;
+	}
+}

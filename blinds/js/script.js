@@ -108,4 +108,44 @@ $(document).ready(function () {
     $("html, body").animate({ scrollTop: 0 }, 600);
     return false;
   });
+  //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+  //Модалные окна
+  //Вызов замерщика
+  $('.popup-active').on('click', function (event) {
+    event.preventDefault();
+    $('.popup-call').fadeIn()
+  });
+  $('.popup-call__close').on('click', function (event) {
+    event.preventDefault();
+    $('.popup-call').fadeOut()
+  });
+  //Виды жалюзей
+  $('.details-popup').on('click', function (event) {
+    event.preventDefault();
+    $('.popup-details').fadeIn()
+  });
+  $('.popup-details__close').on('click', function (event) {
+    event.preventDefault();
+    $('.popup-details').fadeOut()
+  });
+  //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+  //Попап слайдер
+  new Swiper('.popup-details', {
+    centeredSlides: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+    simulateTouch: false,
+  });
+
+  new Swiper('.info-slider', {
+    SliderPerView: 1,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    grabCursor: true,
+  });
+  //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 });

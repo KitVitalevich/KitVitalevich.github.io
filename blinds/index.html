@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blinds</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -84,8 +85,8 @@
         </div>
         <div class="title-list__button">
           <div class="title__button">
-            <button class="btn header-btn">Вызвать замерщика</button>
-            <button class="btn header-btn">Выбрать жалюзи</button>
+            <button class="btn header-btn popup-active">Вызвать замерщика</button>
+            <button class="btn header-btn details-popup">Выбрать жалюзи</button>
           </div>
         </div>
       </div>
@@ -106,7 +107,7 @@
           <img src="img/goods/1.jpg" alt="Окно 1">
           <span>Горизонтальные жалюзи</span>
           <div class="goods-btn__item">
-            <button class="btn goods-btn">Подробнее</button>
+            <button class="btn goods-btn details-popup">Подробнее</button>
             <button class="btn goods-btn">Заказать</button>
           </div>
         </div>
@@ -114,15 +115,15 @@
           <img src="img/goods/2.jpg" alt="Окно 2">
           <span>Вертикальные жалюзи</span>
           <div class="goods-btn__item">
-            <button class="btn goods-btn">Подробнее</button>
+            <button class="btn goods-btn details-popup">Подробнее</button>
             <button class="btn goods-btn">Заказать</button>
           </div>
         </div>
         <div class="goods-list__item">
           <img src="img/goods/3.jpg" alt="Окно 3">
-          <span>Рулоные жалюзи</span>
+          <span>Рулонные жалюзи</span>
           <div class="goods-btn__item">
-            <button class="btn goods-btn">Подробнее</button>
+            <button class="btn goods-btn details-popup">Подробнее</button>
             <button class="btn goods-btn">Заказать</button>
           </div>
         </div>
@@ -130,7 +131,7 @@
           <img src="img/goods/4.jpg" alt="Окно 4">
           <span>Жалюзи плиссе</span>
           <div class="goods-btn__item">
-            <button class="btn goods-btn">Подробнее</button>
+            <button class="btn goods-btn details-popup">Подробнее</button>
             <button class="btn goods-btn">Заказать</button>
           </div>
         </div>
@@ -389,8 +390,139 @@
     </div>
   </footer>
 
+  <!-- Модальные окна -->
+  <!-- Вызов замерщика -->
+  <div class="popup">
+    <div class="popup-call">
+      <div class="popup-call__content">
+        <form>
+          <h3>Для вызова замерщика оставьте свои данные</h3>
+          <input class="input-name" placeholder="Имя" required>
+          <input class="input-phone" placeholder="Телефон" required>
+          <button class="btn call-btn">Вызвать замерщика</button>
+          <button class="popup-call__close">&times;</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Виды жалюзей -->
+  <div class="popup">
+    <div class="popup-details swiper-container">
+      <div class="popup-details__content swiper-wrapper">
+
+        <div class="details swiper-slide">
+          <div class="details-block">
+
+            <div class="details-blocks__description">
+              <div class="block-info">
+                <div class="block-info__slider">
+                  <h3>Вертикальные жалюзи</h3>
+                  <div class="info-slider swiper-container">
+                    <div class="info-slider__wrapper swiper-wrapper">
+                      <div class="info-slider__img swiper-slide">
+                        <div class="details-info__img">
+                          <img src="img/review/1.png" alt="img">
+                        </div>
+                      </div>
+                      <div class="info-slider__img swiper-slide">
+                        <div class="details-info__img">
+                          <img src="img/review/1.png" alt="img">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="block-media">
+                  <div class="block-media__text">
+                    <p>Являются популярным видом жалюзи из-за своей универсальности и простоты конструкции. </p>
+                    <p>В отличии от штор, позволяют плавно регулировать поток света в помещении.</p>
+                    <p>Одновременно с уникальностью дизайна, вертикальные жалюзи - это дешевая альтернатива традиционным
+                      шторам.</p>
+                  </div>
+                  <div class="block-media__price">
+                    <span class="text">от</span>
+                    <span class="text-big">999</span>
+                    <span class="text-bold">рублей</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="details-blocks__form">
+              <form>
+                <input type="text" placeholder="Имя ...">
+                <input type="text" placeholder="Телефон ...">
+                <button class="details-btn btn">Заказать жалюзи</button>
+                <button class="popup-details__close">&times;</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="details swiper-slide">
+          <div class="details-block">
+
+            <div class="details-blocks__description">
+              <div class="block-info">
+                <div class="block-info__slider">
+                  <h3>Вертикальные жалюзи</h3>
+                  <div class="info-slider swiper-container">
+                    <div class="info-slider__wrapper swiper-wrapper">
+                      <div class="info-slider__img swiper-slide">
+                        <div class="details-info__img">
+                          <img src="img/review/1.png" alt="img">
+                        </div>
+                      </div>
+                      <div class="info-slider__img swiper-slide">
+                        <div class="details-info__img">
+                          <img src="img/review/1.png" alt="img">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="block-media">
+                  <div class="block-media__text">
+                    <p>Являются популярным видом жалюзи из-за своей универсальности и простоты конструкции. </p>
+                    <p>В отличии от штор, позволяют плавно регулировать поток света в помещении.</p>
+                    <p>Одновременно с уникальностью дизайна, вертикальные жалюзи - это дешевая альтернатива традиционным
+                      шторам.</p>
+                  </div>
+                  <div class="block-media__price">
+                    <span class="text">от</span>
+                    <span class="text-big">999</span>
+                    <span class="text-bold">рублей</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="details-blocks__form">
+              <form>
+                <input type="text" placeholder="Имя ...">
+                <input type="text" placeholder="Телефон ...">
+                <button class="details-btn btn">Заказать жалюзи</button>
+                <button class="popup-details__close">&times;</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
 
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/script.js"></script>
