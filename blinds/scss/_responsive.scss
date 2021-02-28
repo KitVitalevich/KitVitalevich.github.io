@@ -336,7 +336,7 @@
 
 @media (max-width: 659px) {
   .details-blocks__form {
-    margin: 20px 0px 0px 0px;
+    margin: 15px 0px 0px 0px;
     form {
       flex-direction: column;
       input {
@@ -490,6 +490,8 @@
   padding: 20px;
 }
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+//Скролл вверх
 .scrollup {
   right: 0;
   left: 15px;
@@ -497,6 +499,7 @@
 }
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 
+//Попап, Вызов замержика
 .popup-call__content {
   form {
     width: 100%;
@@ -511,7 +514,7 @@
   }
   .block-media__price {
     position: relative;
-    margin-top: 10px;
+    margin-top: 0px;
     .text {
       font-size: 16px;
     }
@@ -527,7 +530,7 @@
   .block-media__text {
     p {
       font-size: 14px;
-      margin: 0px 0px 15px 0px;
+      margin: 0px 0px 5px 0px;
     }
   }
   .details-block {

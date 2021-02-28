@@ -51,12 +51,12 @@
 	}
 	&__close {
 		position: absolute;
-		top: -3rem;
-		right: -2.5rem;
+		top: -0.5rem;
+		right: 0rem;
 		width: 2rem;
 		font-size: 3rem;
 		text-align: center;
-		color: #fff;
+		color: $color-btn;
 		background-color: transparent;
 		border: none;
 		opacity: 0.6;
