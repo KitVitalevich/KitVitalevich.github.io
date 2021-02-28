@@ -494,8 +494,6 @@ h1, h2, h3, h4, h5, h6 {
           align-items: center;
 }
 
-/* Слайдер запущен */
-/* Слайдер с точками */
 /* Ограничивающая оболочка */
 .slick-list {
   overflow: hidden;
@@ -515,17 +513,15 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: none;
+  transition: none;
 }
 
-/* Слайд */
-/* Слайд активный (показывается) */
-/* Слайд основной */
-/* Слайд по центру */
-/* Клонированный слайд */
-/* Стрелка */
-/* Стрелка влево */
-/* Стрелка вправо */
-/* Стрелка не активная */
+.slick {
+  -webkit-transition: none;
+  transition: none;
+}
+
 .slider {
   cursor: pointer;
   position: relative;
@@ -566,10 +562,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .slider__item {
   text-align: center;
+  -webkit-transition: none;
+  transition: none;
 }
 
 .slider__item img {
   width: 100%;
+  -webkit-transition: none;
+  transition: none;
 }
 
 .sliderbig {
@@ -1166,7 +1166,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid #cccccc;
   width: 100%;
   font-size: 20px;
-  padding: 15px 0px 15px 15px;
+  padding: 15px 10px 15px 15px;
   margin: 0px 0px 15px 0px;
 }
 
@@ -1580,7 +1580,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     top: 0;
     background-color: #fff;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     text-align: center;
     -webkit-transform: translateX(100%);
@@ -1730,6 +1730,16 @@ h1, h2, h3, h4, h5, h6 {
   }
   .footer-low__frontend {
     text-align: center;
+  }
+  .popup-call__content form {
+    padding: 20px;
+  }
+  .popup-call__content form h3 {
+    font-size: 23px;
+    margin: 0px 0px 30px 0px;
+  }
+  .popup-call__content .call-btn {
+    padding: 16px 20px;
   }
   .block-info {
     -webkit-box-orient: vertical;
@@ -1946,6 +1956,10 @@ h1, h2, h3, h4, h5, h6 {
     left: 15px;
     bottom: 20px;
   }
+  .popup-call__content form {
+    width: 100%;
+    padding: 20px 10px;
+  }
   .block-media {
     margin: 40px 0px 0px 0px;
   }
@@ -1985,5 +1999,14 @@ h1, h2, h3, h4, h5, h6 {
   }
   .popup-details .swiper-pagination {
     bottom: -30px;
+  }
+}
+
+@media (max-width: 410px) {
+  .popup-call__content {
+    width: 95%;
+  }
+  .popup-call__content form {
+    padding: 20px 10px;
   }
 }
