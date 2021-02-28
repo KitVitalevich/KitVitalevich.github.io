@@ -137,6 +137,9 @@ $(document).ready(function () {
       clickable: true
     },
     simulateTouch: false,
+    observer: true,
+    observeParents: true,
+    observeSlideChildren: true,
   });
 
   new Swiper('.info-slider', {
@@ -146,6 +149,9 @@ $(document).ready(function () {
       prevEl: '.swiper-button-prev'
     },
     grabCursor: true,
+    observer: true,
+    observeParents: true,
+    observeSlideChildren: true,
   });
   //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 });
