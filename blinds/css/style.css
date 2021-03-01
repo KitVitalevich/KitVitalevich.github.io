@@ -1466,7 +1466,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .popup-query__content {
   position: fixed;
-  top: 20%;
+  top: 10%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
