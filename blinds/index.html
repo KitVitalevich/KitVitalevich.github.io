@@ -24,7 +24,7 @@
             <source srcset=img/smartphone.svg>
             <img class="link-smartphone" src=img/smartphone.png alt=смартфон>
           </picture>
-          <a href="tel:8 (999) 999-99-99">8 (999) 999-99-99</a>
+          <a href="tel:89999999999">8 (999) 999-99-99</a>
           <span>Режим работы с 9<sup>00</sup> до 18<sup>00</sup></span>
         </div>
         <div class="burger-block">
@@ -108,7 +108,7 @@
           <span>Горизонтальные жалюзи</span>
           <div class="goods-btn__item">
             <button class="btn goods-btn details-popup">Подробнее</button>
-            <button class="btn goods-btn">Заказать</button>
+            <a href="#sale" class="btn goods-btn">Заказать</a>
           </div>
         </div>
         <div class="goods-list__item">
@@ -116,7 +116,7 @@
           <span>Вертикальные жалюзи</span>
           <div class="goods-btn__item">
             <button class="btn goods-btn details-popup">Подробнее</button>
-            <button class="btn goods-btn">Заказать</button>
+            <a href="#sale" class="btn goods-btn">Заказать</a>
           </div>
         </div>
         <div class="goods-list__item">
@@ -124,7 +124,7 @@
           <span>Рулонные жалюзи</span>
           <div class="goods-btn__item">
             <button class="btn goods-btn details-popup">Подробнее</button>
-            <button class="btn goods-btn">Заказать</button>
+            <a href="#sale" class="btn goods-btn">Заказать</a>
           </div>
         </div>
         <div class="goods-list__item">
@@ -132,7 +132,7 @@
           <span>Жалюзи плиссе</span>
           <div class="goods-btn__item">
             <button class="btn goods-btn details-popup">Подробнее</button>
-            <button class="btn goods-btn">Заказать</button>
+            <a href="#sale" class="btn goods-btn">Заказать</a>
           </div>
         </div>
       </div>
@@ -142,7 +142,7 @@
           <h3>Не знаете какие жалюзи выбрать?</h3>
           <span>Оставьте заявку на консультацию и наш специалист подробно ответит
             на все Ваши вопросы. Это бесплатно.</span>
-          <button class="btn advice-btn">Бесплатная консультация</button>
+          <button class="btn advice-btn query-popup">Бесплатная консультация</button>
         </div>
         <div class="goods-advice__img">
           <img src="img/goods/5.jpg" alt="Окно 5">
@@ -355,7 +355,7 @@
 
           <div class="footer-head__phone">
             <span>Телефон</span>
-            <p>8 (999) 999-99-99</p>
+            <a href="tel:89999999999">8 (999) 999-99-99</a>
           </div>
 
           <div class="footer-head__icon">
@@ -365,7 +365,7 @@
             <div class="icon-inst">
               <a href="https://www.instagram.com/kit_vitalevich/"></a>
             </div>
-            <button class="btn footer-btn">Задать вопрос</button>
+            <button class="btn footer-btn query-popup">Задать вопрос</button>
           </div>
         </div>
       </div>
@@ -397,8 +397,8 @@
       <div class="popup-call__content">
         <form>
           <h3>Для вызова замерщика оставьте свои данные</h3>
-          <input class="input-name" placeholder="Имя" required>
-          <input class="input-phone" placeholder="Телефон" required>
+          <input class="input-name" placeholder="Имя ..." required>
+          <input class="input-phone" placeholder="Телефон ..." required>
           <button class="btn call-btn">Вызвать замерщика</button>
           <button class="popup-call__close">&times;</button>
         </form>
@@ -521,6 +521,21 @@
     </div>
   </div>
 
+  <!-- Задать вопрос -->
+  <div class="popup">
+    <div class="popup-query">
+      <div class="popup-query__content">
+        <form>
+          <h3>Задайте вопрос, и наш менеджер с радостью ответит на него</h3>
+          <input class="input-name" placeholder="Имя ..." required>
+          <input class="input-phone" placeholder="Телефон ..." required>
+          <textarea name="#" id="#" rows="5" placeholder="Ваш вопрос ..."></textarea>
+          <button class="btn query-btn">Задать вопрос</button>
+          <button class="popup-query__close">&times;</button>
+        </form>
+      </div>
+    </div>
+  </div>
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>

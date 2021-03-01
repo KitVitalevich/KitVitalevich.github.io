@@ -128,6 +128,15 @@ $(document).ready(function () {
     event.preventDefault();
     $('.popup-details').fadeOut()
   });
+  //Задать вопрос
+  $('.query-popup').on('click', function (event) {
+    event.preventDefault();
+    $('.popup-query').fadeIn()
+  });
+  $('.popup-query__close').on('click', function (event) {
+    event.preventDefault();
+    $('.popup-query').fadeOut()
+  });
   //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
   //Попап слайдер
   new Swiper('.popup-details', {

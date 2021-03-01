@@ -1,9 +1,10 @@
 //Блок с акцией
 .sale {
-  margin: 80px 0px 80px 0px;
+  display: flex;
   &-block {
     display: flex;
     justify-content: space-around;
+    margin: 80px 0px;
     &__delivery {
       width: 100%;
       p {
