@@ -1,0 +1,137 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+  border: 0;
+  transition: all 0.3s;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+  font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+//Контeйнер
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 15px;
+}
+@media (max-width: 1200px) {
+	.container {
+		max-width: 970px;
+	}
+}
+@media (max-width: 992px) {
+	.container {
+		max-width: 750px;
+	}
+}
+@media (max-width: 768px) {
+	.container {
+		max-width: none;
+	}
+}
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+//Подключение шрифтов
+* {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+}
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+//Цвета
+$bg-color: #353535;
+$red-color: #DF463D;
+$green-color: #85D700;
+$minor-color: #616161;
+$footer-color: #2B2A2A;
+$list-color: #241C1C;
+$popup-color: #372D2D;
+$sale-color: #393838;
+
+body {
+  background-color: $bg-color;
+}
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+//Элементы
+// .btn {
+// 	background: #DF463D;
+//   clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+// 	padding: 20px 80px;
+// 	font-weight: 500;
+//   font-size: 26px;
+// 	letter-spacing: 0.05em;
+// 	border-radius: 2px;
+// 	&:hover {
+// 		text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+// 		box-shadow: 3px 3px 20px rgb(0, 255, 42);
+// 	}
+// }
+
+.btn {
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 26px;
+	font-weight: 400;
+	letter-spacing: 0.03em;
+	background-color: $red-color;
+	clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+	padding: 20px 85px;
+	border-radius: 2px;
+	&:hover {
+		text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+		&::before {
+			animation: move-light 0.5s;
+		}
+	}
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 2em;
+		height: 100%;
+		background-color: rgba(235, 222, 217, 0.7);
+		transform: translate(-4em) skewX(45deg);
+	}
+}
+@keyframes move-light {
+	from {
+		transform: translate(-4em) skewX(45deg);
+	}
+	to {
+		transform: translate(20em) skewX(45deg);
+	}
+}
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
