@@ -126,6 +126,33 @@ body {
 		transform: translate(-4em) skewX(45deg);
 	}
 }
+
+.title {
+  z-index: 1;
+  h2 {
+    font-size: 58px;
+    font-weight: 500;
+    text-shadow: 0px 0px 15px rgba(162, 3, 218, 0.4);
+  }
+}
+
+.features,.feedback {
+	position: relative;
+	.engine {
+		position: absolute;
+		top: 100px;
+		right: 50px;
+		max-width: 900px;
+		z-index: 0;
+	}
+	.engine__item {
+		img {
+			width: 100%;
+		}
+	}
+}
+
+
 @keyframes move-light {
 	from {
 		transform: translate(-4em) skewX(45deg);

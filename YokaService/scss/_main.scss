@@ -1,7 +1,9 @@
 //Главная страница
 .main {
-  min-height: 100vh;
   background: url(../img/main/bg.png) 0 0 / 100% no-repeat;
+}
+.main__wrapper {
+  padding-bottom: 40px;
 }
 .main__title {
   display: flex;

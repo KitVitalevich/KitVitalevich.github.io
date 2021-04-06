@@ -1,0 +1,31 @@
+//Почему мы?
+.gallery {
+  background: linear-gradient(180deg, #1B1919 0%, #333232 100%);
+  flex-direction: column;
+}
+.gallery__wrapper {
+  padding: 100px 0 40px;
+}
+.gallery__container {
+  .swiper-scrollbar-drag {
+    cursor: pointer;
+    background-color: $red-color;
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    color: $green-color;
+  }
+  .swiper-button-next::after {
+    right: 0;
+  }
+}
+.gallery__img {
+  margin: 40px 0;
+  img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,30 @@
+//Почему мы?
+.features {
+  position: relative;
+  background: linear-gradient(180deg, #0C0B0A 0%, #1B1919 100%);
+}
+.features__wrapper {
+  display: flex;
+  flex-direction: column; 
+  padding-top: 100px; 
+}
+.features__list {
+  margin: 70px 0 0 0;
+  z-index: 1;
+  li {
+    position: relative;
+    font-size: 28px;
+    margin: 60px 0;
+    padding-left: 40px;
+    line-height: 1.2;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 32px;
+      height: 32px;
+      background: url(../img/features/vector.svg) 0 0 / 100% no-repeat;
+    }
+  }
+}
