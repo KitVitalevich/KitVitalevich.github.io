@@ -8,8 +8,8 @@ $(document).ready(function () {
 //Слайдер gallery
 new Swiper('.gallery__container', {
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.gallery-btn__prev',
+    prevEl: '.gallery-btn__next',
   },
   scrollbar: {
     el: '.swiper-scrollbar',
@@ -48,7 +48,7 @@ new Swiper('.brands__container', {
     },
     992: {
       slidesPerView: 6,
-      spaceBetween: 50,
+      spaceBetween: 70,
     },
   }
 });

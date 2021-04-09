@@ -1,6 +1,9 @@
 @media (max-width: 1759px) {
   //Главная 
   .main {
+    .main__wrapper {
+      padding-top: 140px;
+    }
     .main__title {
       h1 {
         font-size: 40px;
@@ -95,7 +98,6 @@
   .main {
     .main__title {
       h1 {
-        margin-top: 140px;
         font-size: 32px;
         max-width: 500px;
       }
@@ -216,6 +218,11 @@
     .container {
       padding: 0 50px;
     }
+    .brands__citation {
+      i {
+        font-size: 20px;
+      }
+    }
   } 
   //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 
@@ -239,23 +246,53 @@
   //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
   //Главная 
   .main {
-      .main__title {
-        h1 {
-          margin-top: 100px;
-          font-size: 28px;
-          max-width: 500px;
-        }
-        h2 {
-          font-size: 18px;
-          max-width: 500px;
-        }
+    .main__wrapper {
+      padding-top: 100px;  
+    }
+    .main__title {
+      h1 {
+        font-size: 28px;
+        max-width: 500px;
       }
-      .main__info {
-        margin-top: 80px;
+      h2 {
+        font-size: 18px;
+        max-width: 500px;
       }
+    }
+    .main__info {
+      width: 970px;
+      padding: 0 15px;
+    }
   }
   //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
-  
+  //Подвал
+  .footer {
+    .footer-content__map {
+      iframe {
+        height: 300px;
+      }
+    }
+    .footer__info {
+      h3 {
+        font-size: 28px;
+      }
+      p, a {
+        font-size: 20px;
+      }
+    }
+    .footer__policy {
+      a {
+        font-size: 18px;
+      }
+    }
+    .footer__front-end {
+      p, a {
+        font-size: 18px;
+      }
+    }
+  }
+  //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
 }
 
 @media (max-width: 992px) {
@@ -294,7 +331,6 @@
   //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
   //Главная 
   .main {
-    padding-bottom: 20px;
     .main__title {
       h1 {
         font-size: 22px;
@@ -306,7 +342,8 @@
       }
     }
     .main__info {
-      margin-top: 30px;
+      width: 750px;
+      padding: 0 15px;
     }
     .left__item {
       margin-top: 40px;
@@ -414,7 +451,59 @@
         font-size: 22px;
       }
     }
+    .brands__citation {
+      margin-top: 0;
+      i {
+        font-size: 14px;
+      }
+    }
   }
+  //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+  //Подвал
+  .footer {
+    .footer__content {
+      flex-direction: column;
+    }
+    .footer-content__map {
+      flex: 0 1 auto;
+      iframe {
+        height: 300px;
+      }
+    }
+    .footer-content__info {
+      flex: 0 1 auto;
+      margin: 30px 0px 0px 0px;
+    }
+    .footer__social {
+      position: relative;
+      justify-content: flex-end;
+      margin: 10px 0px 0px 0px;
+    }
+    .footer__info {
+      h3 {
+        font-size: 28px;
+      }
+      p, a {
+        font-size: 20px;
+      }
+    }
+    .footer__policy {
+      a {
+        font-size: 14px;
+      }
+      span {
+        font-size: 12px;
+        margin: 6px 0px 0px 0px;
+      }
+    }
+    .footer__front-end {
+      p, a {
+        font-size: 14px;
+      }
+    }
+  }
+  //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
 }
 
 @media (max-width: 768px) {
@@ -548,7 +637,6 @@
     background-position: center;
     .main__title {
       h1 {
-        margin-top: 70px;
         font-size: 28px;
         max-width: none;
       }
@@ -563,7 +651,8 @@
       order: 2;
     }
     .main__info {
-      margin-top: 0;
+      position: relative;
+      width: auto;
       flex-direction: column;
     }
     .left__item {
@@ -584,11 +673,9 @@
       align-self: start;
       font-size: 20px;
       padding: 15px 50px;
-      margin: 0 0 40px 0;
     }
     .info__right {
       order: 1;
-      margin-top: 35px;
     }
     .right__regular {
       font-size: 30px;
@@ -599,6 +686,14 @@
     .right__medium {
       font-size: 50px;
     }
+  }
+  //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+  //Процесс работы
+  .gallery {
+      .gallery-btn__next,
+      .gallery-btn__prev {
+        display: none;
+      }
   }
   //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
   //Отзывы
@@ -616,18 +711,59 @@
     .slide__block {
       height: 200px;
     }
-    .swiper-btn__next {
-      left: 0;
-    }
-    .swiper-btn__prev {
-      right: 0;
-    }
     .swiper-btn__next, 
     .swiper-btn__prev {
-      width: 15px;
-      height: 32px;
+      display: none;
     }
   }
+  //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+  //Подвал
+  .footer {
+    .footer__wrapper {
+      padding: 20px 0px;
+    }
+    .footer-content__map {
+      iframe {
+        height: 200px;
+      }
+    }
+    .footer__info {
+      h3 {
+        font-size: 22px;
+      }
+      p, a {
+        font-size: 18px;
+        margin: 15px 0px 0px 0px;
+        padding: 0px 0px 0px 20px;
+        &::before {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+    .footer__social {
+      justify-content: center;
+      margin: 30px 0px 0px 0px;
+    }
+    .footer__bottom {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 30px 0px 0px 0px;
+    }
+    .footer__logo {
+      margin: 0px 0px 0px 0px;
+    }
+    .footer__policy {
+      display: block;
+      margin: 20px 0px;
+    }
+    .footer__front-end {
+      text-align: center;
+    }
+  }
+  //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
 }
 
 @media (max-width: 425px) {
@@ -647,17 +783,12 @@
   //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
   //Процесс работы
   .gallery {
-  .gallery__wrapper {
-    padding: 25px 0px 15px 0px;
-  }
-  .gallery__container {
-    .swiper-button-next::after,
-    .swiper-button-prev::after {
-      font-size: 30px;
+    .gallery__wrapper {
+      padding: 25px 0px 15px 0px;
     }
   }
-  }
   //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+  //Отзывы
   .feedback {
     .feedback__wrapper {
       padding: 25px 0px 15px;

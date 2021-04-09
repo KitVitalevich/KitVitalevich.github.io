@@ -11,13 +11,6 @@
     cursor: pointer;
     background-color: $red-color;
   }
-  .swiper-button-next::after,
-  .swiper-button-prev::after {
-    color: $green-color;
-  }
-  .swiper-button-next::after {
-    right: 0;
-  }
 }
 .gallery__img {
   margin: 40px 0;
@@ -27,5 +20,23 @@
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
+  }
+}
+.gallery__swiper {
+  position: relative;
+  .gallery-btn__next,
+  .gallery-btn__prev {
+    opacity: 0.5;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .gallery-btn__next {
+    left: 10px;
+    z-index: 2;
+  }
+  .gallery-btn__prev {
+    right: 10px;
+    z-index: 2;
   }
 }

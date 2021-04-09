@@ -27,8 +27,8 @@
   position: relative;
   margin: 70px 0 0 0;
 }
-.swiper-btn__next, 
-.swiper-btn__prev {
+.swiper-arrow__next, 
+.swiper-arrow__prev {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -58,13 +58,13 @@
     bottom: 10px;
   }
 }
-.swiper-btn__next {
+.swiper-arrow__next {
   left: -45px;
 }
-.swiper-btn__prev {
+.swiper-arrow__prev {
   right: -45px;
 }
-.swiper-btn__prev {
+.swiper-arrow__prev {
   &::before {
     transform: rotate(45deg);
   }
@@ -72,11 +72,19 @@
     transform: rotate(-45deg);
   }
 }
-.swiper-btn__next {
+.swiper-arrow__next {
   &::before {
     transform: rotate(-45deg);
   }
   &::after {
     transform: rotate(45deg);
+  }
+}
+.brands__citation {
+  text-align: right;
+  margin-top: 50px;
+  i {
+    font-size: 23px;
+    font-weight: 100;
   }
 }
