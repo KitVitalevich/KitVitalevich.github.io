@@ -1323,12 +1323,12 @@ body {
 
 .gallery__swiper .gallery-btn__next {
   left: 10px;
-  z-index: 2;
+  z-index: 1;
 }
 
 .gallery__swiper .gallery-btn__prev {
   right: 10px;
-  z-index: 2;
+  z-index: 1;
 }
 
 .feedback {
@@ -1823,4 +1823,219 @@ body {
   font-size: 18px;
   font-weight: 400;
   margin: 30px 0px 0px 0px;
+}
+
+.page__store {
+  display: block;
+  margin: 90px 0px 0px 0px;
+}
+
+.store-page__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.store-page__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 22%;
+          flex: 0 1 22%;
+}
+
+.store-page__left a {
+  font-size: 22px;
+}
+
+.store-page__pick a {
+  position: relative;
+  display: inline-block;
+}
+
+.store-page__pick a:hover::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.store-page__pick a::before {
+  content: '';
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.pick-clothes {
+  margin: 0px 0px 0px 30px;
+}
+
+.store-page__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 78%;
+          flex: 0 1 78%;
+}
+
+.page__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.search-page__input {
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  font-size: 22px;
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+}
+
+.search-page__btn {
+  position: relative;
+  display: block;
+}
+
+.search-page__btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background: url(../img/page-nav/search.svg) 0 0/100% no-repeat;
+}
+
+.search-page__favorit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 0px 0px 25px;
+}
+
+.search-page__favorit a {
+  position: relative;
+  font-size: 22px;
+  margin-left: 20px;
+}
+
+.search-page__favorit a::after {
+  content: '';
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.search-page__favorit a::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 0px;
+  width: 15px;
+  height: 20px;
+  background: url(../img/page-nav/bookmark.svg) 0 0/100% no-repeat;
+}
+
+.search-page__favorit a:hover::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.page__sort {
+  margin: 30px 0px 30px 0px;
+}
+
+.sort-page__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sort-page__blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.sort-page__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sort-page__items p {
+  font-size: 20px;
+  letter-spacing: 0.06em;
+}
+
+.sort-page__pick {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sort-page__item {
+  position: relative;
+  font-size: 20px;
+  color: #616161;
+  margin: 0px 30px;
+}
+
+.sort-page__item:last-child {
+  margin: 0px 0px 0px 30px;
+}
+
+.sort-page__item:hover::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.sort-page__item::before {
+  content: '';
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #616161;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }

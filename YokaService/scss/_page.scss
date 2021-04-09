@@ -1,0 +1,163 @@
+//Магазин и поиск
+.page__store {
+  display: block;
+  margin: 90px 0px 0px 0px;
+}
+.store-page__wrapper {
+  display: flex;
+}
+
+
+.store-page__left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0 1 22%;
+  a {
+    font-size: 22px;
+  }
+}
+.store-page__pick {
+  a {
+    position: relative;
+    display: inline-block;
+    &:hover {
+      &::before {
+        transform: scale(1);
+      }
+    }
+    &::before {
+      content: '';
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #fff;
+      transition: 0.4s;
+      transform: scale(0);
+    }
+  }
+}
+.pick-clothes {
+  margin: 0px 0px 0px 30px;
+}
+
+
+.store-page__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0 1 78%;
+}
+.page__search {
+  display: flex;
+  width: 100%;
+}
+.search-page__input {
+  width: 100%;
+}
+.search-input {
+  width: 100%;
+  font-size: 22px;
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+}
+.search-page__btn {
+  position: relative;
+  display: block;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: url(../img/page-nav/search.svg) 0 0 / 100% no-repeat;
+  }
+}
+.search-page__favorit {
+  display: flex;
+  margin: 0px 0px 0px 25px;
+  a {
+    position: relative;
+    font-size: 22px;
+    margin-left: 20px;
+    &::after {
+      content: '';
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #fff;
+      transition: 0.4s;
+      transform: scale(0);
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      left: -20px;
+      top: 0px;
+      width: 15px;
+      height: 20px;
+      background: url(../img/page-nav/bookmark.svg) 0 0 / 100% no-repeat;
+    }
+    &:hover {
+      &::after {
+        transform: scale(1);
+      }
+    }
+  }
+}
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+
+//Сортировка
+.page__sort {
+  margin: 30px 0px 30px 0px;
+}
+.sort-page__wrapper {
+  display: flex;
+}
+.sort-page__blocks {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.sort-page__items {
+  display: flex;
+  p {
+    font-size: 20px;
+    letter-spacing: 0.06em;
+  }
+}
+.sort-page__pick {
+  display: flex;
+}
+.sort-page__item {
+  position: relative;
+  font-size: 20px;
+  color: $minor-color;
+  margin: 0px 30px;
+  &:last-child {
+    margin: 0px 0px 0px 30px;
+  }
+  &:hover {
+    &::before {
+      transform: scale(1);
+    }
+  }
+  &::before {
+    content: '';
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: $minor-color;
+    transition: 0.4s;
+    transform: scale(0);
+  }
+}
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
